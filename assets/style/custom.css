@@ -1,0 +1,113 @@
+/* font faces */
+
+@font-face {
+  font-family: "Zardouz";
+  src: url("/assets/fonts/PTSans.ttc"); /*URL to font*/
+}
+
+/* initial configs */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zardouz";
+}
+
+/* global classes */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.my-6 {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.px-8 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.bg-center {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.max-h-600 {
+  max-height: 600px;
+}
+
+.fs-05 {
+    font-size: .5rem;
+}
+
+.blur-5 {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.zardouz-underline {
+  border-bottom: #13131342 solid 3px;
+}
+/* main classes */
+
+.header-hero {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.image-hover {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.image-hover:hover {
+  filter: contrast(0.5);
+  -webkit-filter: contrast(0.5);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.overlay-content {
+  top: 80%;
+  right: 10%;
+  left: 10%;
+}
+
+.renew img {
+  max-height: 600px;
+}
+
+.customize img {
+  max-height: 500px;
+  width: auto;
+  object-fit: cover;
+  object-position: top;
+  cursor: pointer;
+}
+
+footer input::placeholder {
+  padding: 0 30px;
+}
+
+footer input {
+  border: rgba(0, 0, 0, 0.247) solid 1px;
+}
+/* Responsive */
