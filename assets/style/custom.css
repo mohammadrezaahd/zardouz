@@ -19,6 +19,18 @@ body {
 
 /* global classes */
 
+.vw-50 {
+  width: 50vw;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
