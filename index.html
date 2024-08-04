@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/zardouz/utilities/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/zardouz/utilities/bootstrap/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="/zardouz/assets/style/custom.css" />
     <link
       rel="stylesheet"
@@ -85,7 +88,9 @@
         <div class="col-6 position-relative p-0">
           <div
             class="h-screen bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-5 image-hover"
-            style="background-image: url('/zardouz/assets/images/men-collection.png')"
+            style="
+              background-image: url('/zardouz/assets/images/men-collection.png');
+            "
           ></div>
           <div
             class="d-flex flex-column justify-content-center align-content-center flex-wrap text-center position-absolute overlay-content"
@@ -179,7 +184,7 @@
           </div>
           <div
             class="row row-cols-3 justify-content-center align-items-center align-content-center"
-          > 
+          >
             <div
               class="col-4 d-flex flex-column align-content-center justify-content-center"
             >
@@ -253,7 +258,6 @@
           </span>
         </form>
       </div>
-
       <div
         class="footer-links d-flex gap-4 justify-content-around flex-wrap w-50"
       >
@@ -282,7 +286,7 @@
     </footer>
     <!-- Footer end -->
 
-    <!-- Offcanvas start -->
+    <!-- Main menu Offcanvas start -->
     <div
       class="offcanvas offcanvas-end px-4"
       tabindex="-1"
@@ -298,10 +302,18 @@
       </div>
       <div class="offcanvas-body lh-lg d-flex flex-column">
         <div class="d-flex align-items-center">
-          <a class="text-decoration-none text-black cursor-pointer me-2">New in</a>
+          <a class="text-decoration-none text-black cursor-pointer me-2"
+            >New in</a
+          >
           <li class="fa fa-thin fa-angle-right fs-05"></li>
         </div>
-        <a class="text-decoration-none text-black cursor-pointer">Women</a>
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight2"
+          aria-controls="offcanvasRight2"
+          >Women</a
+        >
         <a class="text-decoration-none text-black cursor-pointer">Men</a>
         <a class="text-decoration-none text-black cursor-pointer">Handbags</a>
         <a class="text-decoration-none text-black cursor-pointer">Children</a>
@@ -316,7 +328,69 @@
         </div>
       </div>
     </div>
-    <!-- Offcanvas end -->
+    <!-- Main menu Offcanvas end -->
+    <!-- Nested menu Offcanvas start 2 -->
+    <div
+      class="offcanvas offcanvas-end px-4"
+      tabindex="-1"
+      id="offcanvasRight2"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          data-bs-dismiss="offcanvas2"
+          aria-label="Close"
+        >
+          <li class="fa fa-thin fa-angle-left fs-05"></li>
+          <span class="text-decoration-underline text-black lh-1" href=""
+            >Back</span
+          >
+        </div>
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body lh-lg d-flex flex-column">
+        <div>
+          <h2>Handbags</h2>
+        </div>
+        <div
+          class="row row-cols-2 justify-content-between align-items-center align-content-center my-4"
+        >
+          <a class="col-6 text-decoration-none text-black cursor-pointer">
+            <img
+              class="col-12"
+              src="/zardouz//assets/images/menu-item-1.png"
+              alt=""
+            />
+            <span class="fs-6">summer handbags</span>
+          </a>
+          <a class="col-6 text-decoration-none text-black cursor-pointer">
+            <img
+              class="col-12"
+              src="/zardouz//assets/images/menu-item-2.png"
+              alt=""
+            />
+            <span class="fs-6">new in handbags</span>
+          </a>
+        </div>
+
+        <div class="mt-5 d-flex flex-column lh-lg">
+          <a class="text-black text-decoration-none" href="">Sign in</a>
+          <a class="text-black text-decoration-none" href="">My orders</a>
+          <a class="text-black text-decoration-none" href="">Contact us</a>
+          <a class="text-black text-decoration-none" href="">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <!-- Nested menu offcanvas end -->
+
     <script src="/zardouz/assets/js/custom.js"></script>
     <script src="/zardouz/utilities/bootstrap/js/bootstrap.min.js"></script>
   </body>
