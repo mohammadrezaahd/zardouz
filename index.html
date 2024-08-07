@@ -17,61 +17,237 @@
   <body>
     <!-- Header start -->
     <header
-      class="header-hero py-2 px-5 d-flex flex-column align-content-center justify-content-between"
+      class="header-hero py-2 px-0 px-md-5 d-flex flex-column align-content-center justify-content-center"
       style="background-image: url('/zardouz/assets//images/main-banner.png')"
     >
       <!-- Start nav -->
-      <nav
-        class="d-flex justify-content-between align-content-center align-items-center"
-      >
-        <div class="contact-btn">
-          <div class="menu d-flex align-items-center align-content-center">
-            <i class="fa fa-thin fa-plus text-white me-2"></i>
-            <span class="text-white">Contact Us</span>
+      <div class="nav-container fixed-top d-none d-md-block">
+        <nav
+          class="nav-bar d-flex justify-content-between align-content-center align-items-center px-5 py-1"
+        >
+          <div class="contact-btn">
+            <div
+              data-bs-toggle="offcanvas"
+              data-bs-target="#contactOffCanvas"
+              aria-controls="contactOffCanvas"
+              class="menu d-flex align-items-center align-content-center cursor-pointer"
+            >
+              <i
+                class="color-change-class fa fa-thin fa-plus text-white me-2"
+              ></i>
+              <span class="color-change-class text-white">Contact Us</span>
+            </div>
           </div>
-        </div>
 
-        <div class="logo fs-2 text-white">ZARDOUZ</div>
+          <div class="logo color-change-class fs-2 text-white">ZARDOUZ</div>
 
-        <div class="nav-items">
-          <div class="d-flex align-content-center align-items-center">
-            <i class="fa fa-thin fa-bag-shopping text-white"></i>
-            <!-- Shopping bag icon -->
-            <i class="fa fa-thin fa-user text-white mx-4"></i>
-            <!-- User profile icon -->
-            <i
-              class="fa fa-thin fa-magnifying-glass text-white cursor-pointer"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseExample"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            ></i>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body">
-                Some placeholder content for the collapse component. This panel
-                is hidden by default but revealed when the user activates the
-                relevant trigger.
+          <div class="nav-items">
+            <div class="d-flex align-content-center align-items-center">
+              <i
+                class="color-change-class fa fa-thin fa-bag-shopping text-white cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#cartCollapse"
+                aria-expanded="true"
+                aria-controls="cartCollapse"
+              ></i>
+              <!-- Shopping bag icon -->
+              <i
+                class="color-change-class fa fa-thin fa-user text-white mx-4 cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#accountCollapse"
+                aria-expanded="true"
+                aria-controls="accountCollapse"
+              ></i>
+              <!-- User profile icon -->
+              <i
+                class="color-change-class fa fa-thin fa-magnifying-glass text-white cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#searchCollapse"
+                aria-expanded="true"
+                aria-controls="searchCollapse"
+              ></i>
+              <!-- Search icon -->
+              <div
+                class="menu d-flex align-content-center align-items-center ms-4 cursor-pointer"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#menuOffCanvas"
+                aria-controls="menuOffCanvas"
+              >
+                <i
+                  class="color-change-class fa fa-solid fa-bars text-white"
+                ></i>
+                <!-- Hamburger menu icon -->
+                <span class="color-change-class text-white">Menu</span>
               </div>
             </div>
-            <!-- Search icon -->
-            <div
-              class="menu d-flex align-content-center align-items-center ms-4 cursor-pointer"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight"
-              aria-controls="offcanvasRight"
-            >
-              <i class="fa fa-solid fa-bars text-white"></i>
-              <!-- Hamburger menu icon -->
-              <span class="text-white">Menu</span>
+          </div>
+        </nav>
+        <!-- Start Collapse menus -->
+        <!-- SEARCH -->
+        <div
+          id="searchCollapse"
+          class="accordion-collapse collapse bg-white w-50 float-end me-5"
+          data-bs-parent="#accordionExample"
+        >
+          <div
+            class="accordion-body justify-content-between align-items-center p-4"
+          >
+            <div class="row row-cols-2">
+              <div class="wave-group border-black border-bottom">
+                <input required="" type="text" class="input" />
+                <label class="label">
+                  <span class="label-char" style="--index: 0">
+                    What are you looking for?
+                  </span>
+                </label>
+              </div>
+              <div class="d-flex justify-content-end">
+                <span
+                  data-bs-toggle="collapse"
+                  data-bs-target="#searchCollapse"
+                  aria-expanded="true"
+                  aria-controls="searchCollapse"
+                  class="close-search text-black text-decoration-underline cursor-pointer"
+                  >CANCEL</span
+                >
+              </div>
+            </div>
+
+            <div class="row row-cols-3 mt-5">
+              <div class="col-4">
+                <h5 class="fw-bold">TRENDING SEARCHES</h5>
+                <div class="d-flex flex-column lh-lg">
+                  <a class="text-black" href="">Handbags</a>
+                  <a class="text-black" href="">Accessories</a>
+                  <a class="text-black" href="">Tops & Shirts</a>
+                  <a class="text-black" href="">Skirt</a>
+                </div>
+              </div>
+              <div class="col-4">
+                <h5 class="fw-bold">WHAT'S NEW</h5>
+                <div class="d-flex flex-column lh-lg">
+                  <a class="text-black" href="">Women</a>
+                  <a class="text-black" href="">Men</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-
+        <!-- ACCOUNT -->
+        <div
+          id="accountCollapse"
+          class="accordion-collapse collapse bg-white w-10 float-end me-5"
+          data-bs-parent="#accordionExample"
+        >
+          <div
+            class="accordion-body d-flex flex-column justify-content-between align-items-start p-4 lh-lg"
+          >
+            <a class="text-decoration-none text-dark" href="">SIGN IN</a>
+            <a class="text-decoration-none text-dark" href="">MY ORDERS</a>
+            <a class="text-decoration-none text-dark" href=""
+              >ACCOUNT SETTINGS</a
+            >
+            <a class="text-decoration-none text-dark" href="">WALLET</a>
+            <a class="text-decoration-none text-dark" href="">SAVED ITEMS</a>
+            <a class="text-decoration-none text-dark" href=""
+              >MY APPOINTMENTS</a
+            >
+          </div>
+        </div>
+        <!-- CART -->
+        <div
+          id="cartCollapse"
+          class="accordion-collapse collapse bg-white w-25 float-end me-5 rounded-2"
+          data-bs-parent="#accordionExample"
+        >
+          <h3 class="fs-4 text-center my-3">ADDED TO SHOPPING BAG</h3>
+          <div
+            class="accordion-body cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
+          >
+            <div class="row row-cols-2">
+              <div class="col-3">
+                <img
+                  class="img-fluid rounded-1 w-100"
+                  src="/zardouz//assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-9 d-flex flex-column lh-lg justify-content-around"
+              >
+                <h5>WOMEN'S SKIRT</h5>
+                <span class="fs-md">$ 1,190</span>
+                <span>Quantity: 1</span>
+                <span>Size: 36</span>
+              </div>
+            </div>
+            <hr class="zardouz-underline" />
+            <div class="row row-cols-2">
+              <div class="col-3">
+                <img
+                  class="img-fluid rounded-1 w-100"
+                  src="/zardouz//assets/images/6f5a17aa-1b3b-4125-b62a-71e9b282275c.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-9 d-flex flex-column lh-lg justify-content-around"
+              >
+                <h5>WOMEN'S SKIRT</h5>
+                <span class="fs-md">$ 1,190</span>
+                <span>Quantity: 1</span>
+                <span>Size: 36</span>
+              </div>
+            </div>
+            <hr />
+            <div class="row row-cols-2">
+              <div class="col-3">
+                <img
+                  class="img-fluid rounded-1 w-100"
+                  src="/zardouz//assets/images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="col-9 d-flex flex-column lh-lg justify-content-around"
+              >
+                <h5>WOMEN'S SKIRT</h5>
+                <span class="fs-md">$ 1,190</span>
+                <span>Quantity: 1</span>
+                <span>Size: 36</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <button
+              class="w-75 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
+            >
+              CHECKOUT
+            </button>
+            <button
+              class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+            >
+              VIEW SHOPPING BAG
+            </button>
+          </div>
+        </div>
+        <!-- End Collapse menus -->
+      </div>
+      <div class="mobile-nav d-block d-md-none fixed-top m-4">
+        <i
+          class="fa fa-solid fa-bars text-white"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#responsiveOffcanvas"
+          aria-controls="responsiveOffcanvas"
+        ></i>
+      </div>
       <!-- End nav -->
 
       <!-- Start language select form -->
-      <section class="language-form row row-cols-1 justify-content-center">
+      <section class="language-form d-flex flex-column align-items-center justify-content-center">
         <div class="w-75">
           <div class="d-flex border-bottom border-white cursor-pointer">
             <h3 class="text-white pb-1">GEORGIA</h3>
@@ -100,9 +276,9 @@
         <!-- HALF COL 1 -->
         <div class="col-6 position-relative p-0">
           <div
-            class="vh-100 bg-size-cover bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-5 image-hover"
+            class="vh-100 vh-mobile-40 bg-size-cover bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-0 p-md-5 image-hover"
             style="
-            margin-right: -10px;
+              margin-right: -10px;
               background-image: url('/zardouz/assets/images/men-collection.png');
             "
           ></div>
@@ -116,7 +292,7 @@
         <!-- HALF COL 2 -->
         <div class="col-6 position-relative p-0">
           <div
-            class="vh-100 bg-size-cover bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-5 image-hover"
+            class="vh-100 vh-mobile-40 bg-size-cover bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-0 ح-ئی-5 image-hover"
             style="
               background-image: url('/zardouz/assets/images/summer-collection.png');
             "
@@ -131,7 +307,7 @@
         <!-- FULL COL -->
         <div class="col-12 position-relative p-0">
           <div
-            class="h-screen bg-center bg-size-cover object-fit-cover test d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-5 image-hover"
+            class="vh-100 vh-mobile-50 bg-center bg-size-cover object-fit-cover test d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-5 image-hover"
             style="
               background-image: url('/zardouz/assets/images/zardouz-accessories.png');
             "
@@ -180,10 +356,8 @@
                 publishing and graphic design Lorem ipsum is a placeholder
               </p>
             </div>
-            <a
-              class="text-decoration-none text-dark pb-2 zardouz-underline"
-              href="#"
-              >DISCOVER MORE</a
+            <a class="menu__link text-decoration-none" href="#"
+              >DISCOVER MOREE</a
             >
           </div>
         </div>
@@ -191,7 +365,7 @@
       <!-- End section Renew -->
 
       <!-- Start customize -->
-      <section class="customize m-0 p-0 p-md-3 m-md-3">
+      <section class="customize m-2 p-2 p-md-3 m-md-3">
         <div class="d-flex flex-column align-content-center align-items-center">
           <div class="my-5">
             <h2 class="text-center">ZARDOUZ CUSTOMIZED</h2>
@@ -231,9 +405,7 @@
             </div>
           </div>
           <div class="my-4">
-            <a
-              class="text-decoration-none text-dark pb-2 zardouz-underline"
-              href="#"
+            <a class="text-decoration-none menu__link" href="#"
               >DISCOVER MORE</a
             >
           </div>
@@ -245,11 +417,10 @@
 
     <!-- Footer start -->
     <footer
-      class="d-flex flex-column align-content-center justify-content-between align-items-center mx-5 px-5 my-6"
-      style="height: 50vh"
+      class="d-flex flex-column align-content-center justify-content-between align-items-center mx-0 mx-md-5 px-3 px-md-5 my-6 vh-50"
     >
       <div class="footer-form d-flex flex-column justify-content-between">
-        <h3 class="text-center mx-5">
+        <h3 class="text-center mx-2 mx-md-5">
           Receive exclusive promotions, private sales and news
         </h3>
 
@@ -273,7 +444,7 @@
         </form>
       </div>
       <div
-        class="footer-links d-flex gap-4 justify-content-around flex-wrap w-50"
+        class="footer-links d-flex gap-2 gap-md-4 justify-content-around flex-wrap w-50 w-mobile-100"
       >
         <a class="text-decoration-none text-black">Help</a>
         <a class="text-decoration-none text-black" href="">My purchases</a>
@@ -289,7 +460,9 @@
           >Renew your clothes</a
         >
       </div>
-      <div class="footer-socials d-flex flex-wrap gap-5 py-5">
+      <div
+        class="footer-socials d-flex flex-wrap justify-content-center gap-4 gap-md-5 py-5 w-mobile-100"
+      >
         <i class="fa fa-brands fa-square-instagram fs-2"></i>
         <i class="fa fa-brands fa-facebook-f fs-2"></i>
         <i class="fa fa-brands fa-linkedin-in fs-2"></i>
@@ -304,7 +477,7 @@
     <div
       class="offcanvas offcanvas-end px-4"
       tabindex="-1"
-      id="offcanvasRight"
+      id="menuOffCanvas"
       aria-labelledby="offcanvasRightLabel"
     >
       <div class="offcanvas-header d-flex justify-content-end">
@@ -324,16 +497,52 @@
         <a
           class="text-decoration-none text-black cursor-pointer"
           data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight2"
-          aria-controls="offcanvasRight2"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
           >Women</a
         >
-        <a class="text-decoration-none text-black cursor-pointer">Men</a>
-        <a class="text-decoration-none text-black cursor-pointer">Handbags</a>
-        <a class="text-decoration-none text-black cursor-pointer">Children</a>
-        <a class="text-decoration-none text-black cursor-pointer">Gifts</a>
-        <a class="text-decoration-none text-black cursor-pointer">Customize</a>
-        <a class="text-decoration-none text-black cursor-pointer">Renew</a>
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Men</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Handbags</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Children</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Gifts</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Customize</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Renew</a
+        >
 
         <div class="mt-5 d-flex flex-column lh-lg">
           <a class="text-black" href="">Sign in</a>
@@ -347,15 +556,15 @@
     <div
       class="offcanvas offcanvas-end px-4"
       tabindex="-1"
-      id="offcanvasRight2"
+      id="itemsOffCanvas"
       aria-labelledby="offcanvasRightLabel"
     >
       <div class="offcanvas-header d-flex justify-content-between">
         <div
           class="cursor-pointer"
           data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
+          data-bs-target="#menuOffCanvas"
+          aria-controls="menuOffCanvas"
           data-bs-dismiss="offcanvas2"
           aria-label="Close"
         >
@@ -404,7 +613,198 @@
       </div>
     </div>
     <!-- Nested menu offcanvas end -->
-
+    <!-- Contact menu Offcanvas start 2 -->
+    <div
+      class="offcanvas offcanvas-end px-4"
+      tabindex="-1"
+      id="contactOffCanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          data-bs-dismiss="offcanvas2"
+          aria-label="Close"
+        ></div>
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body lh-lg d-flex flex-column">
+        <h3 class="fw-bold">CONTACT US</h3>
+        <div
+          class="d-flex flex-column justify-content-between gap-3 align-items-start my-4"
+        >
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >CALL US +283474865</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >WHATSAPP US</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >LIVE CHAT</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a class="text-black fw-bold text-decoration-none"
+              >DO you need further assistance?</a
+            >
+          </div>
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >GET IN CONTACT WITH US</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact menu offcanvas end -->
+    <!-- Responsive menu offcanvas start -->
+    <div
+      class="offcanvas offcanvas-end px-4 w-100"
+      tabindex="-1"
+      id="responsiveOffcanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          data-bs-dismiss="offcanvas2"
+          aria-label="Close"
+        ></div>
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              Home
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              Profile
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false"
+            >
+              Contact
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-disabled-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-disabled"
+              type="button"
+              role="tab"
+              aria-controls="pills-disabled"
+              aria-selected="false"
+              disabled
+            >
+              Disabled
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0"
+          >
+            ...
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-disabled"
+            role="tabpanel"
+            aria-labelledby="pills-disabled-tab"
+            tabindex="0"
+          >
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Responsive menu offcanvas end -->
     <script src="/zardouz/assets/js/custom.js"></script>
     <script src="/zardouz/utilities/bootstrap/js/bootstrap.min.js"></script>
   </body>
