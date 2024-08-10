@@ -15,467 +15,592 @@
     <title>ZARDOUZ</title>
   </head>
   <body>
-    <!-- Header start -->
-    <header
-      class="header-hero py-2 px-0 px-md-5 d-flex flex-column align-content-center justify-content-center"
-      style="background-image: url('/zardouz/assets//images/main-banner.png')"
-    >
-      <!-- Start nav -->
-      <div class="nav-container fixed-top d-none d-md-block">
-        <nav
-          class="nav-bar d-flex justify-content-between align-content-center align-items-center px-5 py-1"
-        >
-          <div class="contact-btn">
+    <div class="main-container">
+      <!-- Header start -->
+      <header
+        class="header-hero py-2 px-0 px-md-5 d-flex flex-column align-content-center justify-content-center vh-mobile-80"
+        style="background-image: url('/zardouz/assets//images/main-banner.png')"
+      >
+        <!-- Start nav -->
+        <div class="nav-container fixed-top d-none d-md-block">
+          <nav
+            class="nav-bar d-flex justify-content-between align-content-center align-items-center px-5 py-1"
+          >
+            <div class="contact-btn">
+              <div
+                data-bs-toggle="offcanvas"
+                data-bs-target="#contactOffCanvas"
+                aria-controls="contactOffCanvas"
+                class="menu d-flex align-items-center align-content-center cursor-pointer"
+              >
+                <i
+                  class="color-change-class fa fa-thin fa-plus text-white me-2"
+                ></i>
+                <span class="color-change-class text-white">Contact Us</span>
+              </div>
+            </div>
+
+            <div class="logo color-change-class fs-2 text-white">ZAR-DOUZ</div>
+
+            <div class="nav-items">
+              <div class="d-flex align-content-center align-items-center">
+                <i
+                  class="color-change-class fa fa-thin fa-bag-shopping text-white cursor-pointer accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cartCollapse"
+                  aria-expanded="true"
+                  aria-controls="cartCollapse"
+                ></i>
+                <!-- Shopping bag icon -->
+                <i
+                  class="color-change-class fa fa-thin fa-user text-white mx-4 cursor-pointer accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#accountCollapse"
+                  aria-expanded="true"
+                  aria-controls="accountCollapse"
+                ></i>
+                <!-- User profile icon -->
+                <i
+                  class="color-change-class fa fa-thin fa-magnifying-glass text-white cursor-pointer accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#searchCollapse"
+                  aria-expanded="true"
+                  aria-controls="searchCollapse"
+                ></i>
+                <!-- Search icon -->
+                <div
+                  class="menu d-flex align-content-center align-items-center ms-4 cursor-pointer"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#menuOffCanvas"
+                  aria-controls="menuOffCanvas"
+                >
+                  <i
+                    class="color-change-class fa fa-solid fa-bars text-white"
+                  ></i>
+                  <!-- Hamburger menu icon -->
+                  <span class="color-change-class text-white">Menu</span>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- Start Collapse menus -->
+          <!-- SEARCH -->
+          <div
+            id="searchCollapse"
+            class="accordion-collapse collapse bg-white w-50 float-end me-5"
+            data-bs-parent="#accordionExample"
+          >
             <div
-              data-bs-toggle="offcanvas"
-              data-bs-target="#contactOffCanvas"
-              aria-controls="contactOffCanvas"
-              class="menu d-flex align-items-center align-content-center cursor-pointer"
+              class="accordion-body justify-content-between align-items-center p-4"
             >
-              <i
-                class="color-change-class fa fa-thin fa-plus text-white me-2"
-              ></i>
-              <span class="color-change-class text-white">Contact Us</span>
+              <div class="row row-cols-2">
+                <div class="wave-group border-black border-bottom">
+                  <input required="" type="text" class="input" />
+                  <label class="label">
+                    <span class="label-char" style="--index: 0">
+                      What are you looking for?
+                    </span>
+                  </label>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <span
+                    data-bs-toggle="collapse"
+                    data-bs-target="#searchCollapse"
+                    aria-expanded="true"
+                    aria-controls="searchCollapse"
+                    class="close-search text-black text-decoration-underline cursor-pointer"
+                    >CANCEL</span
+                  >
+                </div>
+              </div>
+
+              <div class="row row-cols-3 mt-5">
+                <div class="col-4">
+                  <h5 class="fw-bold">TRENDING SEARCHES</h5>
+                  <div class="d-flex flex-column lh-lg">
+                    <a class="text-black" href="">Handbags</a>
+                    <a class="text-black" href="">Accessories</a>
+                    <a class="text-black" href="">Tops & Shirts</a>
+                    <a class="text-black" href="">Skirt</a>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <h5 class="fw-bold">WHAT'S NEW</h5>
+                  <div class="d-flex flex-column lh-lg">
+                    <a class="text-black" href="">Women</a>
+                    <a class="text-black" href="">Men</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="logo color-change-class fs-2 text-white">ZARDOUZ</div>
-
-          <div class="nav-items">
-            <div class="d-flex align-content-center align-items-center">
+          <!-- ACCOUNT -->
+          <div
+            id="accountCollapse"
+            class="accordion-collapse collapse bg-white w-10 float-end me-5"
+            data-bs-parent="#accordionExample"
+          >
+            <div
+              class="accordion-body d-flex flex-column justify-content-between align-items-start p-4 lh-lg"
+            >
+              <a class="text-decoration-none text-dark" href="">SIGN IN</a>
+              <a class="text-decoration-none text-dark" href="">MY ORDERS</a>
+              <a class="text-decoration-none text-dark" href=""
+                >ACCOUNT SETTINGS</a
+              >
+              <a class="text-decoration-none text-dark" href="">WALLET</a>
+              <a class="text-decoration-none text-dark" href="">SAVED ITEMS</a>
+              <a class="text-decoration-none text-dark" href=""
+                >MY APPOINTMENTS</a
+              >
+            </div>
+          </div>
+          <!-- CART -->
+          <div
+            id="cartCollapse"
+            class="accordion-collapse collapse bg-white w-25 float-end me-5 rounded-2"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="d-flex justify-content-between align-items-center px-4">
+              <h3 class="fs-4 text-center my-3">ADDED TO SHOPPING BAG</h3>
               <i
-                class="color-change-class fa fa-thin fa-bag-shopping text-white cursor-pointer accordion-button"
+                class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#cartCollapse"
                 aria-expanded="true"
                 aria-controls="cartCollapse"
               ></i>
-              <!-- Shopping bag icon -->
-              <i
-                class="color-change-class fa fa-thin fa-user text-white mx-4 cursor-pointer accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#accountCollapse"
-                aria-expanded="true"
-                aria-controls="accountCollapse"
-              ></i>
-              <!-- User profile icon -->
-              <i
-                class="color-change-class fa fa-thin fa-magnifying-glass text-white cursor-pointer accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#searchCollapse"
-                aria-expanded="true"
-                aria-controls="searchCollapse"
-              ></i>
-              <!-- Search icon -->
-              <div
-                class="menu d-flex align-content-center align-items-center ms-4 cursor-pointer"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#menuOffCanvas"
-                aria-controls="menuOffCanvas"
-              >
-                <i
-                  class="color-change-class fa fa-solid fa-bars text-white"
-                ></i>
-                <!-- Hamburger menu icon -->
-                <span class="color-change-class text-white">Menu</span>
+            </div>
+            <div
+              class="accordion-body cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
+            >
+              <div class="row row-cols-2">
+                <div class="col-3">
+                  <img
+                    class="img-fluid rounded-1 w-100"
+                    src="/zardouz//assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-9 d-flex flex-column lh-lg justify-content-around"
+                >
+                  <h5>WOMEN'S SKIRT</h5>
+                  <span class="fs-md">$ 1,190</span>
+                  <span>Quantity: 1</span>
+                  <span>Size: 36</span>
+                </div>
+              </div>
+              <hr class="zardouz-underline" />
+              <div class="row row-cols-2">
+                <div class="col-3">
+                  <img
+                    class="img-fluid rounded-1 w-100"
+                    src="/zardouz//assets/images/6f5a17aa-1b3b-4125-b62a-71e9b282275c.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-9 d-flex flex-column lh-lg justify-content-around"
+                >
+                  <h5>WOMEN'S SKIRT</h5>
+                  <span class="fs-md">$ 1,190</span>
+                  <span>Quantity: 1</span>
+                  <span>Size: 36</span>
+                </div>
+              </div>
+              <hr />
+              <div class="row row-cols-2">
+                <div class="col-3">
+                  <img
+                    class="img-fluid rounded-1 w-100"
+                    src="/zardouz//assets/images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-9 d-flex flex-column lh-lg justify-content-around"
+                >
+                  <h5>WOMEN'S SKIRT</h5>
+                  <span class="fs-md">$ 1,190</span>
+                  <span>Quantity: 1</span>
+                  <span>Size: 36</span>
+                </div>
               </div>
             </div>
+            <div class="d-flex flex-column align-items-center">
+              <button
+                class="w-75 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
+              >
+                CHECKOUT
+              </button>
+              <button
+                class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+              >
+                VIEW SHOPPING BAG
+              </button>
+            </div>
           </div>
-        </nav>
-        <!-- Start Collapse menus -->
-        <!-- SEARCH -->
+          <!-- End Collapse menus -->
+        </div>
         <div
-          id="searchCollapse"
-          class="accordion-collapse collapse bg-white w-50 float-end me-5"
-          data-bs-parent="#accordionExample"
+          class="nav-bar mobile-nav d-flex justify-content-between align-items-center d-md-none fixed-top p-3"
         >
-          <div
-            class="accordion-body justify-content-between align-items-center p-4"
-          >
-            <div class="row row-cols-2">
-              <div class="wave-group border-black border-bottom">
-                <input required="" type="text" class="input" />
-                <label class="label">
-                  <span class="label-char" style="--index: 0">
-                    What are you looking for?
-                  </span>
-                </label>
+          <div class="responsive-logo fs-3 text-white color-change-class">
+            ZAR-DOUZ
+          </div>
+          <div class="responsive-menu-items d-flex gap-3">
+            <i
+              class="fa fa-thin fa-bag-shopping text-white color-change-class cursor-pointer accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#cartCollapse"
+              aria-expanded="true"
+              aria-controls="cartCollapse"
+            ></i>
+            <i
+              class="fa fa-thin fa-user text-white color-change-class cursor-pointer accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#accountCollapse"
+              aria-expanded="true"
+              aria-controls="accountCollapse"
+            ></i>
+            <i
+              class="fa fa-thin fa-magnifying-glass text-white color-change-class cursor-pointer accordion-button"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#responsiveSearchOffcanvas"
+              aria-controls="responsiveSearchOffcanvas"
+            ></i>
+            <i
+              class="fa fa-solid fa-bars text-white color-change-class"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#menuOffCanvas"
+              aria-controls="menuOffCanvas"
+            ></i>
+          </div>
+        </div>
+        <!-- End nav -->
+
+        <!-- Start language select form -->
+        <section
+          class="language-form d-flex flex-column align-items-center justify-content-center"
+        >
+          <div class="w-75">
+            <div class="d-flex border-bottom border-white cursor-pointer">
+              <h3 class="text-white pb-1">GEORGIA</h3>
+            </div>
+            <div class="d-flex border-bottom border-white cursor-pointer my-6">
+              <h3 class="text-white pb-1">ENGLISH</h3>
+            </div>
+            <div class="d-flex justify-content-center border border-white">
+              <button class="bg-transparent btn border-0 text-white py-3">
+                GO
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <div></div>
+        <!-- DON'T DELETE IT -->
+        <!-- End language select form -->
+      </header>
+      <!-- Header end -->
+
+      <!-- Main start -->
+      <main class="overflow-x-hidden">
+        <!-- Start collection section -->
+        <section
+          class="collection justify-content-around d-flex flex-wrap mt-3 w-100 gap-2"
+        >
+          <!-- HALF COL 1 -->
+          <div class="w-49 w-mobile-100 position-relative mx-2 mx-md-0 p-0">
+            <div
+              class="vh-100 vh-mobile-50 bg-size-cover bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-0 p-md-5 image-hover"
+              style="
+                margin-right: -10px;
+                background-image: url('/zardouz/assets/images/men-collection.png');
+              "
+            ></div>
+            <div
+              class="d-flex flex-column justify-content-center align-content-center flex-wrap text-center position-absolute overlay-content"
+            >
+              <h2 class="text-white">MEN</h2>
+              <button class="py-1 px-3">EXPLORE MEN'S COLLECTION</button>
+            </div>
+          </div>
+          <!-- HALF COL 2 -->
+          <div class="w-49 w-mobile-100 position-relative mx-2 mx-md-0 p-0">
+            <div
+              class="vh-100 vh-mobile-50 bg-size-cover bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-0 p-md-5 image-hover"
+              style="
+                background-image: url('/zardouz/assets/images/summer-collection.png');
+              "
+            ></div>
+            <div
+              class="d-flex flex-column justify-content-center align-content-center flex-wrap text-center position-absolute overlay-content"
+            >
+              <h2 class="text-white">summer collection</h2>
+              <button class="py-1 px-3">EXPLORE WOMEN'S COLLECTION</button>
+            </div>
+          </div>
+          <!-- FULL COL -->
+          <div class="w-100 position-relative mt-0 mt-md- mx-2 mx-md-0 p-0">
+            <div
+              class="vh-100 vh-mobile-50 bg-center bg-size-cover object-fit-cover test d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-5 image-hover"
+              style="
+                background-image: url('/zardouz/assets/images/zardouz-accessories.png');
+              "
+            ></div>
+
+            <div
+              class="d-flex flex-column justify-content-between align-content-center flex-wrap position-absolute bottom-0 p-5 start-0 end-0"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-content-center flex-wrap text-center"
+              >
+                <h2 class="text-white">Zardouz accessories</h2>
+                <button class="py-1 px-3">
+                  EXPLORE ACCESSORIES COLLECTION
+                </button>
               </div>
-              <div class="d-flex justify-content-end">
-                <span
-                  data-bs-toggle="collapse"
-                  data-bs-target="#searchCollapse"
-                  aria-expanded="true"
-                  aria-controls="searchCollapse"
-                  class="close-search text-black text-decoration-underline cursor-pointer"
-                  >CANCEL</span
+            </div>
+
+            <div
+              class="d-flex flex-column justify-content-between align-content-center flex-wrap position-absolute top-0 p-5 start-0 end-0"
+            >
+              <button class="mx-auto px-5 py-1">Accessories</button>
+            </div>
+          </div>
+        </section>
+        <!-- End collection section -->
+
+        <!-- Start section Renew -->
+        <section class="renew m-0 p-0 p-md-3 m-md-3">
+          <div class="my-5">
+            <h2 class="text-center">Zardouz Renew</h2>
+          </div>
+          <div
+            class="row row-cols-2 align-content-center justify-content-around"
+          >
+            <img
+              class="col-12 col-md-6 col-sm-11 h-auto w-auto"
+              src="/zardouz/assets/images/renew-home.png"
+              alt="zardouz-renew"
+            />
+            <div
+              class="text-center col-12 col-md-6 d-flex flex-column justify-content-around align-content-center align-items-center flex-wrap p-5 p-md-0"
+            >
+              <div>
+                <h3>
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                </h3>
+                <p>
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                </p>
+              </div>
+              <div class="my-4">
+                <a class="text-decoration-none menu__link" href="#"
+                  >DISCOVER MORE</a
                 >
               </div>
             </div>
+          </div>
+        </section>
+        <!-- End section Renew -->
 
-            <div class="row row-cols-3 mt-5">
-              <div class="col-4">
-                <h5 class="fw-bold">TRENDING SEARCHES</h5>
-                <div class="d-flex flex-column lh-lg">
-                  <a class="text-black" href="">Handbags</a>
-                  <a class="text-black" href="">Accessories</a>
-                  <a class="text-black" href="">Tops & Shirts</a>
-                  <a class="text-black" href="">Skirt</a>
+        <!-- Start customize -->
+        <section class="customize m-2 p-2 p-md-3 m-md-3">
+          <div
+            class="d-none d-md-flex flex-column align-content-center align-items-center"
+          >
+            <div class="my-5">
+              <h2 class="text-center">ZARDOUZ CUSTOMIZED</h2>
+            </div>
+            <div
+              class="row row-cols-3 justify-content-center align-items-center align-content-center"
+            >
+              <div
+                class="col-4 d-flex flex-column align-content-center justify-content-center"
+              >
+                <img
+                  class="image-hover rounded-3"
+                  src="/zardouz/assets/images/custom-1.png"
+                  alt=""
+                />
+                <h3 class="mt-4">Cloth</h3>
+                <p>
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                </p>
+              </div>
+              <div
+                class="col-4 d-flex flex-column align-content-center justify-content-cente"
+              >
+                <img
+                  class="image-hover rounded-3"
+                  src="/zardouz/assets/images/custom-2.png"
+                  alt=""
+                />
+                <h3 class="mt-4">Size</h3>
+                <p>
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                </p>
+              </div>
+              <div
+                class="col-4 d-flex flex-column align-content-center justify-content-center"
+              >
+                <img
+                  class="image-hover rounded-3"
+                  src="/zardouz/assets/images/custom-3.png"
+                  alt=""
+                />
+                <h3 class="mt-4">Zipper</h3>
+                <p>
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                  In publishing and graphic design Lorem ipsum is a placeholder
+                </p>
+              </div>
+            </div>
+            <div class="my-4">
+              <a class="text-decoration-none menu__link" href="#"
+                >DISCOVER MORE</a
+              >
+            </div>
+          </div>
+          <div
+            class="customize-slider d-block d-md-none h-100 position-relative bg-white text-black m-0 p-0"
+          >
+            <swiper-container
+              class="mySwiper"
+              watch-slides-progress="true"
+              slides-per-view="3"
+            >
+              <swiper-slide>
+                <img
+                  class="img-fluid image-hover"
+                  src="/zardouz/assets/images/custom-1.png"
+                  alt=""
+                />
+                <div class="mt-2 p-3">
+                  <h3>Cloth</h3>
+                  <p>
+                    In publishing and graphic design Lorem ipsum is a
+                    placeholder In publishing and graphic design Lorem ipsum is
+                    a placeholder
+                  </p>
                 </div>
-              </div>
-              <div class="col-4">
-                <h5 class="fw-bold">WHAT'S NEW</h5>
-                <div class="d-flex flex-column lh-lg">
-                  <a class="text-black" href="">Women</a>
-                  <a class="text-black" href="">Men</a>
+              </swiper-slide>
+              <swiper-slide class="mx-1">
+                <img
+                  class="img-fluid image-hover"
+                  src="/zardouz/assets/images/custom-2.png"
+                  alt=""
+                />
+                <div class="mt-2 p-3">
+                  <h3>Size</h3>
+                  <p>
+                    In publishing and graphic design Lorem ipsum is a
+                    placeholder In publishing and graphic design Lorem ipsum is
+                    a placeholder
+                  </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ACCOUNT -->
-        <div
-          id="accountCollapse"
-          class="accordion-collapse collapse bg-white w-10 float-end me-5"
-          data-bs-parent="#accordionExample"
-        >
-          <div
-            class="accordion-body d-flex flex-column justify-content-between align-items-start p-4 lh-lg"
-          >
-            <a class="text-decoration-none text-dark" href="">SIGN IN</a>
-            <a class="text-decoration-none text-dark" href="">MY ORDERS</a>
-            <a class="text-decoration-none text-dark" href=""
-              >ACCOUNT SETTINGS</a
-            >
-            <a class="text-decoration-none text-dark" href="">WALLET</a>
-            <a class="text-decoration-none text-dark" href="">SAVED ITEMS</a>
-            <a class="text-decoration-none text-dark" href=""
-              >MY APPOINTMENTS</a
-            >
-          </div>
-        </div>
-        <!-- CART -->
-        <div
-          id="cartCollapse"
-          class="accordion-collapse collapse bg-white w-25 float-end me-5 rounded-2"
-          data-bs-parent="#accordionExample"
-        >
-          <h3 class="fs-4 text-center my-3">ADDED TO SHOPPING BAG</h3>
-          <div
-            class="accordion-body cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
-          >
-            <div class="row row-cols-2">
-              <div class="col-3">
+              </swiper-slide>
+              <swiper-slide>
                 <img
-                  class="img-fluid rounded-1 w-100"
-                  src="/zardouz//assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                  class="img-fluid image-hover"
+                  src="/zardouz/assets/images/custom-3.png"
                   alt=""
                 />
-              </div>
-              <div
-                class="col-9 d-flex flex-column lh-lg justify-content-around"
-              >
-                <h5>WOMEN'S SKIRT</h5>
-                <span class="fs-md">$ 1,190</span>
-                <span>Quantity: 1</span>
-                <span>Size: 36</span>
-              </div>
-            </div>
-            <hr class="zardouz-underline" />
-            <div class="row row-cols-2">
-              <div class="col-3">
-                <img
-                  class="img-fluid rounded-1 w-100"
-                  src="/zardouz//assets/images/6f5a17aa-1b3b-4125-b62a-71e9b282275c.png"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-9 d-flex flex-column lh-lg justify-content-around"
-              >
-                <h5>WOMEN'S SKIRT</h5>
-                <span class="fs-md">$ 1,190</span>
-                <span>Quantity: 1</span>
-                <span>Size: 36</span>
-              </div>
-            </div>
-            <hr />
-            <div class="row row-cols-2">
-              <div class="col-3">
-                <img
-                  class="img-fluid rounded-1 w-100"
-                  src="/zardouz//assets/images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
-                  alt=""
-                />
-              </div>
-              <div
-                class="col-9 d-flex flex-column lh-lg justify-content-around"
-              >
-                <h5>WOMEN'S SKIRT</h5>
-                <span class="fs-md">$ 1,190</span>
-                <span>Quantity: 1</span>
-                <span>Size: 36</span>
-              </div>
-            </div>
+                <div class="mt-2 p-3">
+                  <h3>Zipper</h3>
+                  <p>
+                    In publishing and graphic design Lorem ipsum is a
+                    placeholder In publishing and graphic design Lorem ipsum is
+                    a placeholder
+                  </p>
+                </div>
+              </swiper-slide>
+              <swiper-slide></swiper-slide>
+              <swiper-slide class="w-10 bg-danger"></swiper-slide>
+            </swiper-container>
           </div>
-          <div class="d-flex flex-column align-items-center">
-            <button
-              class="w-75 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
-            >
-              CHECKOUT
-            </button>
-            <button
-              class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
-            >
-              VIEW SHOPPING BAG
-            </button>
-          </div>
-        </div>
-        <!-- End Collapse menus -->
-      </div>
-      <div class="mobile-nav d-block d-md-none fixed-top m-4">
-        <i
-          class="fa fa-solid fa-bars text-white"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#responsiveOffcanvas"
-          aria-controls="responsiveOffcanvas"
-        ></i>
-      </div>
-      <!-- End nav -->
+        </section>
+        <!-- End customize -->
+      </main>
+      <!-- Main end -->
 
-      <!-- Start language select form -->
-      <section class="language-form d-flex flex-column align-items-center justify-content-center">
-        <div class="w-75">
-          <div class="d-flex border-bottom border-white cursor-pointer">
-            <h3 class="text-white pb-1">GEORGIA</h3>
-          </div>
-          <div class="d-flex border-bottom border-white cursor-pointer my-6">
-            <h3 class="text-white pb-1">ENGLISH</h3>
-          </div>
-          <div class="d-flex justify-content-center border border-white">
-            <button class="bg-transparent btn border-0 text-white py-3">
-              GO
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <div></div>
-      <!-- DON'T DELETE IT -->
-      <!-- End language select form -->
-    </header>
-    <!-- Header end -->
-
-    <!-- Main start -->
-    <main class="overflow-x-hidden">
-      <!-- Start collection section -->
-      <section class="collection bg-danger row">
-        <!-- HALF COL 1 -->
-        <div class="col-6 position-relative p-0">
-          <div
-            class="vh-100 vh-mobile-40 bg-size-cover bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-0 p-md-5 image-hover"
-            style="
-              margin-right: -10px;
-              background-image: url('/zardouz/assets/images/men-collection.png');
-            "
-          ></div>
-          <div
-            class="d-flex flex-column justify-content-center align-content-center flex-wrap text-center position-absolute overlay-content"
-          >
-            <h2 class="text-white">MEN</h2>
-            <button class="py-1 px-5">EXPLORE MEN'S COLLECTION</button>
-          </div>
-        </div>
-        <!-- HALF COL 2 -->
-        <div class="col-6 position-relative p-0">
-          <div
-            class="vh-100 vh-mobile-40 bg-size-cover bg-center object-fit-cover d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-0 ح-ئی-5 image-hover"
-            style="
-              background-image: url('/zardouz/assets/images/summer-collection.png');
-            "
-          ></div>
-          <div
-            class="d-flex flex-column justify-content-center align-content-center flex-wrap text-center position-absolute overlay-content"
-          >
-            <h2 class="text-white">summer collection</h2>
-            <button class="py-1 px-5">EXPLORE WOMEN'S COLLECTION</button>
-          </div>
-        </div>
-        <!-- FULL COL -->
-        <div class="col-12 position-relative p-0">
-          <div
-            class="vh-100 vh-mobile-50 bg-center bg-size-cover object-fit-cover test d-flex flex-column justify-content-end align-content-center align-items-center flex-wrap p-5 image-hover"
-            style="
-              background-image: url('/zardouz/assets/images/zardouz-accessories.png');
-            "
-          ></div>
-
-          <div
-            class="d-flex flex-column justify-content-between align-content-center flex-wrap position-absolute bottom-0 p-5 start-0 end-0"
-          >
-            <div
-              class="d-flex flex-column justify-content-center align-content-center flex-wrap text-center"
-            >
-              <h2 class="text-white">Zardouz accessories</h2>
-              <button class="py-1 px-5">EXPLORE ACCESSORIES COLLECTION</button>
-            </div>
-          </div>
-
-          <div
-            class="d-flex flex-column justify-content-between align-content-center flex-wrap position-absolute top-0 p-5 start-0 end-0"
-          >
-            <button class="mx-auto px-5 py-1">Accessories</button>
-          </div>
-        </div>
-      </section>
-      <!-- End collection section -->
-
-      <!-- Start section Renew -->
-      <section class="renew m-0 p-0 p-md-3 m-md-3">
-        <div class="my-5">
-          <h2 class="text-center">Zardouz Renew</h2>
-        </div>
-        <div class="row row-cols-2 align-content-center justify-content-around">
-          <img
-            class="col-12 col-md-6 col-sm-11 h-auto w-auto"
-            src="/zardouz/assets/images/renew-home.png"
-            alt="zardouz-renew"
-          />
-          <div
-            class="text-center col-12 col-md-6 d-flex flex-column justify-content-around align-content-center align-items-center flex-wrap p-5 p-md-0"
-          >
-            <div>
-              <h3>
-                In publishing and graphic design Lorem ipsum is a placeholder
-              </h3>
-              <p>
-                In publishing and graphic design Lorem ipsum is a placeholder In
-                publishing and graphic design Lorem ipsum is a placeholder
-              </p>
-            </div>
-            <a class="menu__link text-decoration-none" href="#"
-              >DISCOVER MOREE</a
-            >
-          </div>
-        </div>
-      </section>
-      <!-- End section Renew -->
-
-      <!-- Start customize -->
-      <section class="customize m-2 p-2 p-md-3 m-md-3">
-        <div class="d-flex flex-column align-content-center align-items-center">
-          <div class="my-5">
-            <h2 class="text-center">ZARDOUZ CUSTOMIZED</h2>
-          </div>
-          <div
-            class="row row-cols-3 justify-content-center align-items-center align-content-center"
-          >
-            <div
-              class="col-4 d-flex flex-column align-content-center justify-content-center"
-            >
-              <img src="/zardouz/assets/images/custom-1.png" alt="" />
-              <h3>Cloth</h3>
-              <p>
-                In publishing and graphic design Lorem ipsum is a placeholder In
-                publishing and graphic design Lorem ipsum is a placeholder
-              </p>
-            </div>
-            <div
-              class="col-4 d-flex flex-column align-content-center justify-content-cente"
-            >
-              <img src="/zardouz/assets/images/custom-2.png" alt="" />
-              <h3>Size</h3>
-              <p>
-                In publishing and graphic design Lorem ipsum is a placeholder In
-                publishing and graphic design Lorem ipsum is a placeholder
-              </p>
-            </div>
-            <div
-              class="col-4 d-flex flex-column align-content-center justify-content-center"
-            >
-              <img src="/zardouz/assets/images/custom-3.png" alt="" />
-              <h3>Zipper</h3>
-              <p>
-                In publishing and graphic design Lorem ipsum is a placeholder In
-                publishing and graphic design Lorem ipsum is a placeholder
-              </p>
-            </div>
-          </div>
-          <div class="my-4">
-            <a class="text-decoration-none menu__link" href="#"
-              >DISCOVER MORE</a
-            >
-          </div>
-        </div>
-      </section>
-      <!-- End customize -->
-    </main>
-    <!-- Main end -->
-
-    <!-- Footer start -->
-    <footer
-      class="d-flex flex-column align-content-center justify-content-between align-items-center mx-0 mx-md-5 px-3 px-md-5 my-6 vh-50"
-    >
-      <div class="footer-form d-flex flex-column justify-content-between">
-        <h3 class="text-center mx-2 mx-md-5">
-          Receive exclusive promotions, private sales and news
-        </h3>
-
-        <form class="d-flex flex-column">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-mail"
-            class="form-text py-3 my-5 rounded-1"
-          />
-          <button class="rounded-1 bg-dark text-white py-3" type="submit">
-            Sign me up
-          </button>
-          <span class="my-5 text-center"
-            >By subscribing, you confirm that you have read the
-            <a href="#" class="text-decoration-underline text-black fw-bold">
-              Privacy Policy.
-            </a>
-          </span>
-        </form>
-      </div>
-      <div
-        class="footer-links d-flex gap-2 gap-md-4 justify-content-around flex-wrap w-50 w-mobile-100"
+      <!-- Footer start -->
+      <footer
+        class="d-flex flex-column align-content-center justify-content-between align-items-center mx-0 mx-md-5 px-3 px-md-5 my-6 vh-50"
       >
-        <a class="text-decoration-none text-black">Help</a>
-        <a class="text-decoration-none text-black" href="">My purchases</a>
-        <a class="text-decoration-none text-black" href="">Returns</a>
-        <a class="text-decoration-none text-black" href="">Returns</a>
-        <a class="text-decoration-none text-black" href="">Company</a>
-        <a class="text-decoration-none text-black" href="">Work with Zardouz</a>
-        <a class="text-decoration-none text-black" href="">Site map</a>
-        <a class="text-decoration-none text-black" href="">sustainability</a>
-        <a class="text-decoration-none text-black" href="">store locator</a>
-        <a class="text-decoration-none text-black" href="">special days</a>
-        <a class="text-decoration-none text-black" href=""
-          >Renew your clothes</a
+        <div class="footer-form d-flex flex-column justify-content-between">
+          <h3 class="text-center mx-2 mx-md-5">
+            Receive exclusive promotions, private sales and news
+          </h3>
+
+          <form class="d-flex flex-column">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="form-text py-3 my-5 rounded-1"
+            />
+            <button class="rounded-1 bg-dark text-white py-3" type="submit">
+              Sign me up
+            </button>
+            <span class="my-5 text-center"
+              >By subscribing, you confirm that you have read the
+              <a href="#" class="text-decoration-underline text-black fw-bold">
+                Privacy Policy.
+              </a>
+            </span>
+          </form>
+        </div>
+        <div
+          class="footer-links d-flex gap-2 gap-md-4 justify-content-around flex-wrap w-50 w-mobile-100"
         >
-      </div>
-      <div
-        class="footer-socials d-flex flex-wrap justify-content-center gap-4 gap-md-5 py-5 w-mobile-100"
-      >
-        <i class="fa fa-brands fa-square-instagram fs-2"></i>
-        <i class="fa fa-brands fa-facebook-f fs-2"></i>
-        <i class="fa fa-brands fa-linkedin-in fs-2"></i>
-        <i class="fa fa-brands fa-x-twitter fs-2"></i>
-        <i class="fa fa-brands fa-youtube fs-2"></i>
-        <i class="fa fa-brands fa-pinterest fs-2"></i>
-      </div>
-    </footer>
-    <!-- Footer end -->
+          <a class="text-decoration-none text-black">Help</a>
+          <a class="text-decoration-none text-black" href="">My purchases</a>
+          <a class="text-decoration-none text-black" href="">Returns</a>
+          <a class="text-decoration-none text-black" href="">Returns</a>
+          <a class="text-decoration-none text-black" href="">Company</a>
+          <a class="text-decoration-none text-black" href=""
+            >Work with Zardouz</a
+          >
+          <a class="text-decoration-none text-black" href="">Site map</a>
+          <a class="text-decoration-none text-black" href="">sustainability</a>
+          <a class="text-decoration-none text-black" href="">store locator</a>
+          <a class="text-decoration-none text-black" href="">special days</a>
+          <a class="text-decoration-none text-black" href=""
+            >Renew your clothes</a
+          >
+        </div>
+        <div
+          class="footer-socials d-flex flex-wrap justify-content-center gap-4 gap-md-5 py-5 w-mobile-100"
+        >
+          <i class="fa fa-brands fa-square-instagram fs-2"></i>
+          <i class="fa fa-brands fa-facebook-f fs-2"></i>
+          <i class="fa fa-brands fa-linkedin-in fs-2"></i>
+          <i class="fa fa-brands fa-x-twitter fs-2"></i>
+          <i class="fa fa-brands fa-youtube fs-2"></i>
+          <i class="fa fa-brands fa-pinterest fs-2"></i>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
 
     <!-- Main menu Offcanvas start -->
     <div
-      class="offcanvas offcanvas-end px-4"
+      class="offcanvas offcanvas-end px-4 w-mobile-100"
       tabindex="-1"
       id="menuOffCanvas"
       aria-labelledby="offcanvasRightLabel"
@@ -682,130 +807,96 @@
       </div>
     </div>
     <!-- Contact menu offcanvas end -->
-    <!-- Responsive menu offcanvas start -->
+    <!-- Responsive search menu offcanvas start -->
     <div
-      class="offcanvas offcanvas-end px-4 w-100"
+      class="offcanvas offcanvas-end p-3 w-100"
       tabindex="-1"
-      id="responsiveOffcanvas"
+      id="responsiveSearchOffcanvas"
       aria-labelledby="offcanvasRightLabel"
     >
-      <div class="offcanvas-header d-flex justify-content-between">
-        <div
-          class="cursor-pointer"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
-          data-bs-dismiss="offcanvas2"
-          aria-label="Close"
-        ></div>
-        <i
-          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></i>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true"
-            >
-              Home
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-            >
-              Profile
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              Contact
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="pills-disabled-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-disabled"
-              type="button"
-              role="tab"
-              aria-controls="pills-disabled"
-              aria-selected="false"
-              disabled
-            >
-              Disabled
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-home"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab"
-            tabindex="0"
-          >
-            ...
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-profile"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab"
-            tabindex="0"
-          >
-            ...
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab"
-            tabindex="0"
-          >
-            ...
-          </div>
-          <div
-            class="tab-pane fade"
-            id="pills-disabled"
-            role="tabpanel"
-            aria-labelledby="pills-disabled-tab"
-            tabindex="0"
-          >
-            ...
+      <div class="offcanvas-header d-flex justify-content-between p-0">
+        <div class="offcanvas-body p-0 overflow-hidden">
+          <div class="justify-content-between align-items-center">
+            <div class="row row-cols-2 align-items-center">
+              <div class="wave-group border-black border-bottom col-8">
+                <input required="" type="text" class="input" />
+                <label class="label">
+                  <span class="label-char" style="--index: 0">
+                    What are you looking for?
+                  </span>
+                </label>
+              </div>
+              <div class="d-flex justify-content-end col-4">
+                <span
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  data-bs-dismiss="offcanvas"
+                  class="close-search text-black text-decoration-underline cursor-pointer"
+                  >CANCEL</span
+                >
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <div class="">
+                <h5 class="fw-bold">TRENDING SEARCHES</h5>
+                <div class="d-flex flex-column lh-lg">
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Handbags</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Accessories</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Tops & Shirts</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Skirt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Responsive menu offcanvas end -->
+
+    <!-- Start toast --> 
+    <div
+      class="bagToast toast-hidden rounded-2 w-25 w-mobile-100 sticky-bottom bottom-5 align-items-center text-bg-dark border-0 py-4 m-0 ms-md-2"
+    >
+      <div class="d-flex align-items-center justify-content-around">
+        <div class="toast-body">Your shopping bag is empty</div>
+        <a class="bag-toast-btn zardouz-underline text-white cursor-pointer">
+          Close
+        </a>
+      </div>
+    </div>
+    <!-- End toast -->
     <script src="/zardouz/assets/js/custom.js"></script>
     <script src="/zardouz/utilities/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
