@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/zardouz/utilities/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/zardouz/assets/style/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>ZARDOUZ</title>
+  </head>
+<body>
+          <!-- Header start -->
+          <header
+          class="triangle-divider header-hero py-2 px-0 px-md-5 d-flex flex-column align-content-center justify-content-center vh-mobile-80"
+          style="background-image: url('/zardouz/assets//images/main-banner.png'); clip-path: polygon(49% 29%, 0 0, 100% 0);"
+        >
+          <!-- Start nav -->
+          <div class="nav-container fixed-top d-none d-md-block">
+            <nav
+              class="nav-bar d-flex justify-content-between align-content-center align-items-center px-5 py-1"
+            >
+              <div class="contact-btn">
+                <div
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#contactOffCanvas"
+                  aria-controls="contactOffCanvas"
+                  class="menu d-flex align-items-center align-content-center cursor-pointer"
+                >
+                  <i
+                    class="color-change-class fa fa-thin fa-plus text-white me-2"
+                  ></i>
+                  <span class="color-change-class text-white">Contact Us</span>
+                </div>
+              </div>
+  
+              <div class="logo color-change-class fs-2 text-white">ZAR-DOUZ</div>
+  
+              <div class="nav-items">
+                <div class="d-flex align-content-center align-items-center">
+                  <i
+                    class="color-change-class fa fa-thin fa-bag-shopping text-white cursor-pointer accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#cartCollapse"
+                    aria-expanded="true"
+                    aria-controls="cartCollapse"
+                  ></i>
+                  <!-- Shopping bag icon -->
+                  <i
+                    class="color-change-class fa fa-thin fa-user text-white mx-4 cursor-pointer accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accountCollapse"
+                    aria-expanded="true"
+                    aria-controls="accountCollapse"
+                  ></i>
+                  <!-- User profile icon -->
+                  <i
+                    class="color-change-class fa fa-thin fa-magnifying-glass text-white cursor-pointer accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#searchCollapse"
+                    aria-expanded="true"
+                    aria-controls="searchCollapse"
+                  ></i>
+                  <!-- Search icon -->
+                  <div
+                    class="menu d-flex align-content-center align-items-center ms-4 cursor-pointer"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#menuOffCanvas"
+                    aria-controls="menuOffCanvas"
+                  >
+                    <i
+                      class="color-change-class fa fa-solid fa-bars text-white"
+                    ></i>
+                    <!-- Hamburger menu icon -->
+                    <span class="color-change-class text-white">Menu</span>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- Start Collapse menus -->
+            <!-- SEARCH -->
+            <div
+              id="searchCollapse"
+              class="accordion-collapse collapse bg-white w-50 float-end me-5"
+              data-bs-parent="#accordionExample"
+            >
+              <div
+                class="accordion-body justify-content-between align-items-center p-4"
+              >
+                <div class="row row-cols-2">
+                  <div class="wave-group border-black border-bottom">
+                    <input required="" type="text" class="input" />
+                    <label class="label">
+                      <span class="label-char" style="--index: 0">
+                        What are you looking for?
+                      </span>
+                    </label>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <span
+                      data-bs-toggle="collapse"
+                      data-bs-target="#searchCollapse"
+                      aria-expanded="true"
+                      aria-controls="searchCollapse"
+                      class="close-search text-black text-decoration-underline cursor-pointer"
+                      >CANCEL</span
+                    >
+                  </div>
+                </div>
+  
+                <div class="row row-cols-3 mt-5">
+                  <div class="col-4">
+                    <h5 class="fw-bold">TRENDING SEARCHES</h5>
+                    <div class="d-flex flex-column lh-lg">
+                      <a class="text-black" href="">Handbags</a>
+                      <a class="text-black" href="">Accessories</a>
+                      <a class="text-black" href="">Tops & Shirts</a>
+                      <a class="text-black" href="">Skirt</a>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <h5 class="fw-bold">WHAT'S NEW</h5>
+                    <div class="d-flex flex-column lh-lg">
+                      <a class="text-black" href="">Women</a>
+                      <a class="text-black" href="">Men</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ACCOUNT -->
+            <div
+              id="accountCollapse"
+              class="accordion-collapse collapse bg-white w-10 float-end me-5"
+              data-bs-parent="#accordionExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column justify-content-between align-items-start p-4 lh-lg"
+              >
+                <a class="text-decoration-none text-dark" href="">SIGN IN</a>
+                <a class="text-decoration-none text-dark" href="">MY ORDERS</a>
+                <a class="text-decoration-none text-dark" href=""
+                  >ACCOUNT SETTINGS</a
+                >
+                <a class="text-decoration-none text-dark" href="">WALLET</a>
+                <a class="text-decoration-none text-dark" href="">SAVED ITEMS</a>
+                <a class="text-decoration-none text-dark" href=""
+                  >MY APPOINTMENTS</a
+                >
+              </div>
+            </div>
+            <!-- CART -->
+            <div
+              id="cartCollapse"
+              class="accordion-collapse collapse bg-white w-25 float-end me-5 rounded-2"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="d-flex justify-content-between align-items-center px-4">
+                <h3 class="fs-4 text-center my-3">ADDED TO SHOPPING BAG</h3>
+                <i
+                  class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cartCollapse"
+                  aria-expanded="true"
+                  aria-controls="cartCollapse"
+                ></i>
+              </div>
+              <div
+                class="accordion-body cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
+              >
+                <div class="row row-cols-2">
+                  <div class="col-3">
+                    <img
+                      class="img-fluid rounded-1 w-100"
+                      src="/zardouz//assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col-9 d-flex flex-column lh-lg justify-content-around"
+                  >
+                    <h5>WOMEN'S SKIRT</h5>
+                    <span class="fs-md">$ 1,190</span>
+                    <span>Quantity: 1</span>
+                    <span>Size: 36</span>
+                  </div>
+                </div>
+                <hr class="zardouz-underline" />
+                <div class="row row-cols-2">
+                  <div class="col-3">
+                    <img
+                      class="img-fluid rounded-1 w-100"
+                      src="/zardouz//assets/images/6f5a17aa-1b3b-4125-b62a-71e9b282275c.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col-9 d-flex flex-column lh-lg justify-content-around"
+                  >
+                    <h5>WOMEN'S SKIRT</h5>
+                    <span class="fs-md">$ 1,190</span>
+                    <span>Quantity: 1</span>
+                    <span>Size: 36</span>
+                  </div>
+                </div>
+                <hr />
+                <div class="row row-cols-2">
+                  <div class="col-3">
+                    <img
+                      class="img-fluid rounded-1 w-100"
+                      src="/zardouz//assets/images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="col-9 d-flex flex-column lh-lg justify-content-around"
+                  >
+                    <h5>WOMEN'S SKIRT</h5>
+                    <span class="fs-md">$ 1,190</span>
+                    <span>Quantity: 1</span>
+                    <span>Size: 36</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <button
+                  class="w-75 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
+                >
+                  CHECKOUT
+                </button>
+                <button
+                  class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+                >
+                  VIEW SHOPPING BAG
+                </button>
+              </div>
+            </div>
+            <!-- End Collapse menus -->
+          </div>
+          <div
+            class="nav-bar mobile-nav d-flex justify-content-between align-items-center d-md-none fixed-top p-3"
+          >
+            <div class="responsive-logo fs-3 text-white color-change-class">
+              ZAR-DOUZ
+            </div>
+            <div class="responsive-menu-items d-flex gap-3">
+              <i
+                class="fa fa-thin fa-bag-shopping text-white color-change-class cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#cartCollapse"
+                aria-expanded="true"
+                aria-controls="cartCollapse"
+              ></i>
+              <i
+                class="fa fa-thin fa-user text-white color-change-class cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#accountCollapse"
+                aria-expanded="true"
+                aria-controls="accountCollapse"
+              ></i>
+              <i
+                class="fa fa-thin fa-magnifying-glass text-white color-change-class cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#responsiveSearchOffcanvas"
+                aria-controls="responsiveSearchOffcanvas"
+              ></i>
+              <i
+                class="fa fa-solid fa-bars text-white color-change-class"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#menuOffCanvas"
+                aria-controls="menuOffCanvas"
+              ></i>
+            </div>
+          </div>
+          <!-- End nav -->
+  
+          <!-- Start language select form -->
+          <section
+            class="language-form d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="w-75">
+              <div class="d-flex border-bottom border-white cursor-pointer">
+                <h3 class="text-white pb-1">GEORGIA</h3>
+              </div>
+              <div class="d-flex border-bottom border-white cursor-pointer my-6">
+                <h3 class="text-white pb-1">ENGLISH</h3>
+              </div>
+              <div class="d-flex justify-content-center border border-white">
+                <button class="bg-transparent btn border-0 text-white py-3">
+                  GO
+                </button>
+              </div>
+            </div>
+          </section>
+  
+          <div></div>
+          <!-- DON'T DELETE IT -->
+          <!-- End language select form -->
+        </header>
+        <!-- Header end -->
+
+    <script src="/zardouz/assets/js/custom.js"></script>
+    <script src="/zardouz/utilities/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+</html>

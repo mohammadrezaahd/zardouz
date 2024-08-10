@@ -1,8 +1,9 @@
 //Handle styles by bootstrap events
 
 const mainContainer = document.querySelector(".main-container");
-const bagToastBtn = document.querySelector(".bag-toast-btn")
-const bagToastElement = document.querySelector(".bagToast")
+const bagToastBtn = document.querySelector(".bag-toast-btn");
+const bagToastElement = document.querySelector(".bagToast");
+const cartCount = document.querySelector(".cart-count");
 const offcanvasRightElements = makeObjectsIterable(
   document.getElementsByClassName("offcanvas")
 );
@@ -46,19 +47,28 @@ window.addEventListener("scroll", () => {
       item.classList.add("bg-white");
     });
     colorChangeHandlerElements.forEach((item) => {
-      item.classList.remove("text-white");
-      item.classList.add("text-black");
+      item.classList.replace("text-white", "text-black");
+      cartCount.classList.replace("text-black", "text-white");
+      console.log(cartCount);
     });
   } else {
     navBarElements.forEach((item) => {
       item.classList.remove("bg-white");
     });
     colorChangeHandlerElements.forEach((item) => {
-      item.classList.remove("text-black");
-      item.classList.add("text-white");
+      item.classList.replace("text-black", "text-white");
+      cartCount.classList.replace("text-white", "text-black");
     });
   }
 });
+
+// window.addEventListener("click", () => {
+//   accordionCollapseItems.forEach((item) => {
+//     if (item.classList.contains("show")) {
+//       item.classList.remove("show");
+//     }
+//   });
+// });
 
 //Apply styles for canvas open and close
 offcanvasRightElements.forEach((item) => {
@@ -76,17 +86,17 @@ offcanvasRightElements.forEach((item) => {
 
 //Show and hide notification
 shoppingBagElements.forEach((item) => {
-  item.addEventListener("click", () => { //if only cart was empty
-    if(bagToastElement.classList.contains("toast-hidden")){
-      bagToastElement.classList.remove("toast-hidden")
+  item.addEventListener("click", () => {
+    //if only cart was empty
+    if (bagToastElement.classList.contains("toast-hidden")) {
+      bagToastElement.classList.remove("toast-hidden");
     }
-  
-  })
-})
+  });
+});
 
-bagToastBtn.addEventListener('click', () => {
-  bagToastElement.classList.add("toast-hidden")
-})
+bagToastBtn.addEventListener("click", () => {
+  bagToastElement.classList.add("toast-hidden");
+});
 
 //Convert like arrays to array
 function makeObjectsIterable(obj) {

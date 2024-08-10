@@ -195,6 +195,13 @@ footer input {
   -o-transition: 0.3s;
 }
 
+.cart-count {
+  position: absolute;
+  font-size: .6rem;
+  left: 30%;
+  top: 35%;
+}
+
 /* Search menu input style */
 
 .wave-group {
@@ -302,6 +309,27 @@ footer input {
   -moz-transform: translateX(-150%);
   -ms-transform: translateX(-150%);
   -o-transform: translateX(-150%);
+}
+
+/* Divider */
+
+.triangle-divider {
+  position: relative;
+  background: #50362c;
+  height: 100vh;
+}
+
+.triangle-divider::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 29px 29px 0 29px;
+  border-color: #2c3e50 transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
 }
 
 /* Responsive */
