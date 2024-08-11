@@ -52,11 +52,13 @@
                   aria-expanded="true"
                   aria-controls="cartCollapse"
                 >
-                  <span class="cart-count text-black">2</span>
+                  <span class="cart-count text-black"
+                    >2</span
+                  >
                 </i>
                 <!-- Shopping bag icon -->
                 <i
-                  class="color-change-class fa fa-thin fa-user text-white mx-4 cursor-pointer accordion-button"
+                  class="color-change-class  fa fa-thin fa-user text-white mx-4 cursor-pointer accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#accountCollapse"
@@ -257,15 +259,17 @@
           </div>
           <div class="responsive-menu-items d-flex gap-3">
             <i
-              class="color-change-class fa fa-thin fa-bag-shopping text-white cursor-pointer accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#cartCollapse"
-              aria-expanded="true"
-              aria-controls="cartCollapse"
+            class="color-change-class fa fa-thin fa-bag-shopping text-white cursor-pointer accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#cartCollapse"
+            aria-expanded="true"
+            aria-controls="cartCollapse"
+          >
+            <span class="cart-count text-black"
+              >2</span
             >
-              <span class="cart-count text-black">2</span>
-            </i>
+          </i>
             <i
               class="fa fa-thin fa-user text-white color-change-class cursor-pointer accordion-button"
               type="button"
@@ -673,10 +677,10 @@
           >Renew</a
         >
 
-        <div class="mt-5 d-flex flex-column lh-lg">
-          <a class="text-black" href="">Sign in</a>
-          <a class="text-black" href="">My orders</a>
-          <a class="text-black" href="">Contact us</a>
+        <div class="mt-5 d-flex flex-column align-items-start lh-lg">
+          <a class="text-black text-decoration-none menu__link" href="">Sign in</a>
+          <a class="text-black text-decoration-none menu__link" href="">My orders</a>
+          <a class="text-black text-decoration-none menu__link" href="/zardouz/contact-us.html">Contact us</a>
         </div>
       </div>
     </div>
@@ -803,7 +807,8 @@
           </div>
           <div>
             <a
-              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+            href="/zardouz/contact-us.html"
+              class="text-black fw-bold text-decoration-none menu__link cursor-pointer"
               >GET IN CONTACT WITH US</a
             >
           </div>

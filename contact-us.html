@@ -15,28 +15,23 @@
     <title>ZARDOUZ</title>
   </head>
   <body>
-    <!-- Header start -->
-    <header
-      class="triangle-divider header-hero py-2 px-0 px-md-5 d-flex flex-column align-content-center justify-content-center vh-mobile-80"
-      style="
-        background-image: url('/zardouz/assets//images/main-banner.png');
-        clip-path: polygon(
-          50% 0%,
-          100% 0,
-          100% 43%,
-          100% 82%,
-          49% 100%,
-          50% 100%,
-          0 82%,
-          0% 43%,
-          0 0
-        );
-      "
-    >
+    <div class="main-container">
+      <!-- Header start -->
+      <header
+        class="header-banner py-2 bg-top px-0 px-md-5 d-flex flex-column align-content-center justify-content-end"
+        style="background-image: url('/zardouz/assets//images/contact-us.png')"
+      >
+        <!-- Start page title -->
+        <div class="mb-4 text-center">
+          <h1 class="text-white">CONTACT US</h1>
+        </div>
+        <!-- End page title -->
+      </header>
+      <!-- Header end -->
       <!-- Start nav -->
-      <div class="nav-container fixed-top d-none d-md-block">
+      <div class="nav-container fixed-top">
         <nav
-          class="nav-bar d-flex justify-content-between align-content-center align-items-center px-5 py-1"
+          class="nav-bar bg-white d-none d-md-flex justify-content-between align-content-center align-items-center px-5 py-1"
         >
           <div class="contact-btn">
             <div
@@ -45,28 +40,28 @@
               aria-controls="contactOffCanvas"
               class="menu d-flex align-items-center align-content-center cursor-pointer"
             >
-              <i
-                class="color-change-class fa fa-thin fa-plus text-white me-2"
-              ></i>
-              <span class="color-change-class text-white">Contact Us</span>
+              <i class="fa fa-thin fa-plus text-black me-2"></i>
+              <span class="text-black">Contact Us</span>
             </div>
           </div>
 
-          <div class="logo color-change-class fs-2 text-white">ZAR-DOUZ</div>
+          <div class="logo fs-2 text-black">ZAR-DOUZ</div>
 
           <div class="nav-items">
             <div class="d-flex align-content-center align-items-center">
               <i
-                class="color-change-class fa fa-thin fa-bag-shopping text-white cursor-pointer accordion-button"
+                class="fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#cartCollapse"
                 aria-expanded="true"
                 aria-controls="cartCollapse"
-              ></i>
+              >
+                <span class="cart-count text-white">2</span>
+              </i>
               <!-- Shopping bag icon -->
               <i
-                class="color-change-class fa fa-thin fa-user text-white mx-4 cursor-pointer accordion-button"
+                class="fa fa-thin fa-user text-black mx-4 cursor-pointer accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#accountCollapse"
@@ -75,7 +70,7 @@
               ></i>
               <!-- User profile icon -->
               <i
-                class="color-change-class fa fa-thin fa-magnifying-glass text-white cursor-pointer accordion-button"
+                class="fa fa-thin fa-magnifying-glass text-black cursor-pointer accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#searchCollapse"
@@ -89,11 +84,9 @@
                 data-bs-target="#menuOffCanvas"
                 aria-controls="menuOffCanvas"
               >
-                <i
-                  class="color-change-class fa fa-solid fa-bars text-white"
-                ></i>
+                <i class="fa fa-solid fa-bars text-black"></i>
                 <!-- Hamburger menu icon -->
-                <span class="color-change-class text-white">Menu</span>
+                <span class="text-black">Menu</span>
               </div>
             </div>
           </div>
@@ -152,7 +145,7 @@
         <!-- ACCOUNT -->
         <div
           id="accountCollapse"
-          class="accordion-collapse collapse bg-white w-10 float-end me-5"
+          class="accordion-collapse collapse bg-white float-end me-5 mt-5 pt-2 mt-md-0 pt-md-0"
           data-bs-parent="#accordionExample"
         >
           <div
@@ -173,7 +166,7 @@
         <!-- CART -->
         <div
           id="cartCollapse"
-          class="accordion-collapse collapse bg-white w-25 float-end me-5 rounded-2"
+          class="accordion-collapse collapse bg-white w-25 w-mobile-100 float-md-end m-0 me-md-5 mt-5 pt-2 mt-md-0 pt-md-0 rounded-2"
           data-bs-parent="#accordionExample"
         >
           <div class="d-flex justify-content-between align-items-center px-4">
@@ -188,7 +181,7 @@
             ></i>
           </div>
           <div
-            class="accordion-body cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
+            class="cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
           >
             <div class="row row-cols-2">
               <div class="col-3">
@@ -260,22 +253,22 @@
         <!-- End Collapse menus -->
       </div>
       <div
-        class="nav-bar mobile-nav d-flex justify-content-between align-items-center d-md-none fixed-top p-3"
+        class="nav-bar mobile-nav d-flex justify-content-between align-items-center d-md-none fixed-top p-3 bg-white"
       >
-        <div class="responsive-logo fs-3 text-white color-change-class">
-          ZAR-DOUZ
-        </div>
+        <div class="responsive-logo fs-3 text-black">ZAR-DOUZ</div>
         <div class="responsive-menu-items d-flex gap-3">
           <i
-            class="fa fa-thin fa-bag-shopping text-white color-change-class cursor-pointer accordion-button"
+            class="fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#cartCollapse"
             aria-expanded="true"
             aria-controls="cartCollapse"
-          ></i>
+          >
+            <span class="cart-count text-black">2</span>
+          </i>
           <i
-            class="fa fa-thin fa-user text-white color-change-class cursor-pointer accordion-button"
+            class="fa fa-thin fa-user text-black cursor-pointer accordion-button"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#accountCollapse"
@@ -283,14 +276,14 @@
             aria-controls="accountCollapse"
           ></i>
           <i
-            class="fa fa-thin fa-magnifying-glass text-white color-change-class cursor-pointer accordion-button"
+            class="fa fa-thin fa-magnifying-glass text-black cursor-pointer accordion-button"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#responsiveSearchOffcanvas"
             aria-controls="responsiveSearchOffcanvas"
           ></i>
           <i
-            class="fa fa-solid fa-bars text-white color-change-class"
+            class="fa fa-solid fa-bars text-black"
             data-bs-toggle="offcanvas"
             data-bs-target="#menuOffCanvas"
             aria-controls="menuOffCanvas"
@@ -298,31 +291,476 @@
         </div>
       </div>
       <!-- End nav -->
-
-      <!-- Start language select form -->
-      <section
-        class="language-form d-flex flex-column align-items-center justify-content-center"
-      >
-        <div class="w-75">
-          <div class="d-flex border-bottom border-white cursor-pointer">
-            <h3 class="text-white pb-1">GEORGIA</h3>
-          </div>
-          <div class="d-flex border-bottom border-white cursor-pointer my-6">
-            <h3 class="text-white pb-1">ENGLISH</h3>
-          </div>
-          <div class="d-flex justify-content-center border border-white">
-            <button class="bg-transparent btn border-0 text-white py-3">
-              GO
-            </button>
+      <!-- Main start -->
+      <main class="overflow-x-hidden">
+        <div class="select-language my-5 d-flex justify-content-center align-items-center gap-2">
+          <label class="fw-bold">View contact information for</label>
+          <div class="language-form">
+            <select class="form-select py-1 ps-1 pe-8" aria-label="Default select example">
+              <option selected value="0">English</option>
+              <option value="1">Georgia</option>
+            </select>
           </div>
         </div>
-      </section>
+       
+        <div class="contact-content mx-3 px-0 mx-md-5 px-md-5">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-bolder fs-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                Inquiries about Zardouz website or online purchases
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bolder fs-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Repair
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bolder fs-4"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  About Renew
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Main end -->
+      <!-- Footer start -->
+      <footer
+        class="d-flex flex-column align-content-center justify-content-between align-items-center mx-0 mx-md-5 px-3 px-md-5 my-6 vh-50"
+      >
+        <div class="footer-form d-flex flex-column justify-content-between">
+          <h3 class="text-center mx-2 mx-md-5">
+            Receive exclusive promotions, private sales and news
+          </h3>
 
-      <div></div>
-      <!-- DON'T DELETE IT -->
-      <!-- End language select form -->
-    </header>
-    <!-- Header end -->
+          <form class="d-flex flex-column">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="form-text py-3 my-5 rounded-1"
+            />
+            <button class="rounded-1 bg-dark text-white py-3" type="submit">
+              Sign me up
+            </button>
+            <span class="my-5 text-center"
+              >By subscribing, you confirm that you have read the
+              <a href="#" class="text-decoration-underline text-black fw-bold">
+                Privacy Policy.
+              </a>
+            </span>
+          </form>
+        </div>
+        <div
+          class="footer-links d-flex gap-2 gap-md-4 justify-content-around flex-wrap w-50 w-mobile-100"
+        >
+          <a class="text-decoration-none text-black">Help</a>
+          <a class="text-decoration-none text-black" href="">My purchases</a>
+          <a class="text-decoration-none text-black" href="">Returns</a>
+          <a class="text-decoration-none text-black" href="">Returns</a>
+          <a class="text-decoration-none text-black" href="">Company</a>
+          <a class="text-decoration-none text-black" href=""
+            >Work with Zardouz</a
+          >
+          <a class="text-decoration-none text-black" href="">Site map</a>
+          <a class="text-decoration-none text-black" href="">sustainability</a>
+          <a class="text-decoration-none text-black" href="">store locator</a>
+          <a class="text-decoration-none text-black" href="">special days</a>
+          <a class="text-decoration-none text-black" href=""
+            >Renew your clothes</a
+          >
+        </div>
+        <div
+          class="footer-socials d-flex flex-wrap justify-content-center gap-4 gap-md-5 py-5 w-mobile-100"
+        >
+          <i class="fa fa-brands fa-square-instagram fs-2"></i>
+          <i class="fa fa-brands fa-facebook-f fs-2"></i>
+          <i class="fa fa-brands fa-linkedin-in fs-2"></i>
+          <i class="fa fa-brands fa-x-twitter fs-2"></i>
+          <i class="fa fa-brands fa-youtube fs-2"></i>
+          <i class="fa fa-brands fa-pinterest fs-2"></i>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+
+    <!-- Main menu Offcanvas start -->
+    <div
+      class="offcanvas offcanvas-end px-4 w-mobile-100"
+      tabindex="-1"
+      id="menuOffCanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-end">
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body lh-lg d-flex flex-column">
+        <div class="d-flex align-items-center">
+          <a class="text-decoration-none text-black cursor-pointer me-2"
+            >New in</a
+          >
+          <li class="fa fa-thin fa-angle-right fs-05"></li>
+        </div>
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Women</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Men</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Handbags</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Children</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Gifts</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Customize</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Renew</a
+        >
+
+        <div class="mt-5 d-flex flex-column lh-lg">
+          <a class="text-black text-decoration-none menu__link" href="">Sign in</a>
+          <a class="text-black text-decoration-none menu__link" href="">My orders</a>
+          <a class="text-black text-decoration-none menu__link" href="/zardouz/contact-us.html">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <!-- Main menu Offcanvas end -->
+    <!-- Nested menu Offcanvas start 2 -->
+    <div
+      class="offcanvas offcanvas-end px-4 w-mobile-100"
+      tabindex="-1"
+      id="itemsOffCanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menuOffCanvas"
+          aria-controls="menuOffCanvas"
+          data-bs-dismiss="offcanvas2"
+          aria-label="Close"
+        >
+          <li class="fa fa-thin fa-angle-left fs-05"></li>
+          <span class="text-decoration-underline text-black lh-1" href=""
+            >Back</span
+          >
+        </div>
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body lh-lg d-flex flex-column">
+        <div>
+          <h2>Handbags</h2>
+        </div>
+        <div
+          class="row row-cols-2 justify-content-between align-items-center align-content-center my-4"
+        >
+          <a class="col-6 text-decoration-none text-black cursor-pointer">
+            <img
+              class="col-12"
+              src="/zardouz//assets/images/menu-item-1.png"
+              alt=""
+            />
+            <span class="fs-6">summer handbags</span>
+          </a>
+          <a class="col-6 text-decoration-none text-black cursor-pointer">
+            <img
+              class="col-12"
+              src="/zardouz//assets/images/menu-item-2.png"
+              alt=""
+            />
+            <span class="fs-6">new in handbags</span>
+          </a>
+        </div>
+
+        <div class="mt-5 d-flex flex-column lh-lg">
+          <a class="text-black text-decoration-none" href="">Sign in</a>
+          <a class="text-black text-decoration-none" href="">My orders</a>
+          <a class="text-black text-decoration-none" href="">Contact us</a>
+          <a class="text-black text-decoration-none" href="">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <!-- Nested menu offcanvas end -->
+    <!-- Contact menu Offcanvas start 2 -->
+    <div
+      class="offcanvas offcanvas-end px-4"
+      tabindex="-1"
+      id="contactOffCanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          data-bs-dismiss="offcanvas2"
+          aria-label="Close"
+        ></div>
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body lh-lg d-flex flex-column">
+        <h3 class="fw-bold">CONTACT US</h3>
+        <div
+          class="d-flex flex-column justify-content-between gap-3 align-items-start my-4"
+        >
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >CALL US +283474865</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >WHATSAPP US</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >LIVE CHAT</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a class="text-black fw-bold text-decoration-none"
+              >DO you need further assistance?</a
+            >
+          </div>
+          <div>
+            <a
+            href="/zardouz/contact-us.html"
+              class="text-black fw-bold text-decoration-none menu__link cursor-pointer"
+              >GET IN CONTACT WITH US</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact menu offcanvas end -->
+    <!-- Responsive search menu offcanvas start -->
+    <div
+      class="offcanvas offcanvas-end p-3 w-100"
+      tabindex="-1"
+      id="responsiveSearchOffcanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between p-0">
+        <div class="offcanvas-body p-0 overflow-hidden">
+          <div class="justify-content-between align-items-center">
+            <div class="row row-cols-2 align-items-center">
+              <div class="wave-group border-black border-bottom col-8">
+                <input required="" type="text" class="input" />
+                <label class="label">
+                  <span class="label-char" style="--index: 0">
+                    What are you looking for?
+                  </span>
+                </label>
+              </div>
+              <div class="d-flex justify-content-end col-4">
+                <span
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  data-bs-dismiss="offcanvas"
+                  class="close-search text-black text-decoration-underline cursor-pointer"
+                  >CANCEL</span
+                >
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <div class="">
+                <h5 class="fw-bold">TRENDING SEARCHES</h5>
+                <div class="d-flex flex-column lh-lg">
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Handbags</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Accessories</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Tops & Shirts</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Skirt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Responsive menu offcanvas end -->
+
+    <!-- Start toast -->
+    <div
+      class="bagToast toast-hidden rounded-2 w-25 w-mobile-100 sticky-bottom bottom-5 align-items-center text-bg-dark border-0 py-4 m-0 ms-md-2"
+    >
+      <div class="d-flex align-items-center justify-content-around">
+        <div class="toast-body">Your shopping bag is empty</div>
+        <a class="bag-toast-btn zardouz-underline text-white cursor-pointer">
+          Close
+        </a>
+      </div>
+    </div>
+    <!-- End toast -->
 
     <script src="/zardouz/assets/js/custom.js"></script>
     <script src="/zardouz/utilities/bootstrap/js/bootstrap.min.js"></script>

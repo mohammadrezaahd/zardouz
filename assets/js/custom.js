@@ -49,7 +49,6 @@ window.addEventListener("scroll", () => {
     colorChangeHandlerElements.forEach((item) => {
       item.classList.replace("text-white", "text-black");
       cartCount.classList.replace("text-black", "text-white");
-      console.log(cartCount);
     });
   } else {
     navBarElements.forEach((item) => {
