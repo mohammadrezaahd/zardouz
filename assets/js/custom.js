@@ -118,21 +118,16 @@ document.addEventListener("DOMContentLoaded", () => {
           singleProductSlider.addEventListener("touchend", touchEndHandler);
         };
         const touchEndHandler = (e) => {
-          endY = startY = e.changedTouches[0].clientY;
-          console.log('startY:', startY)
-          console.log('endY:', endY)
-          if(endY > startY){
-            alert("ASdasd")
+          endY = e.changedTouches[0].clientY;
+          if(startY > endY){
+            window.scrollTo({
+              top: window.scrollY + (window.innerHeight / 2),
+              behavior: "smooth",
+            });
+          } else {
+            singleProductSlider.removeEventListener("touchstart", touchStartHandler);
+            singleProductSlider.removeEventListener("touchend", touchEndHandler);
           }
-          // if(endY > startY){
-          //   window.scrollTo({
-          //     top: window.scrollY + window.innerHeight,
-          //     behavior: "smooth",
-          //   });
-          // } else {
-          //   singleProductSlider.removeEventListener("touchstart", touchStartHandler);
-          //   singleProductSlider.removeEventListener("touchend", touchEndHandler);
-          // }
         };
 
         const wheelHandler = (e) => {
