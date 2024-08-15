@@ -31,6 +31,10 @@ body {
   height: 70vh;
 }
 
+.vh-80{
+  height: 80vh;
+}
+
 .w-10 {
   width: 10%;
 }
@@ -94,6 +98,10 @@ body {
 
 .bottom-5 {
   bottom: 5%;
+}
+
+.object-center {
+  object-position: center !important;
 }
 
 .zardouz-underline {
@@ -373,23 +381,29 @@ footer input {
   border: 1px solid gainsboro;
 }
 
-.contact-content .accordion-button:not(.collapsed){
+/* Accordion */
+
+.contact-content .accordion-button:not(.collapsed),
+.single-product-info .accordion-button:not(.collapsed) {
   background: transparent !important;
   border-bottom: none;
   color: black;
 }
 
-.contact-content .accordion-button:focus {
+.contact-content .accordion-button:focus,
+.single-product-info .accordion-button:focus {
   box-shadow: none !important;
 }
 
-.contact-content .accordion-item {
+.contact-content .accordion-item,
+.single-product-info .accordion-item {
   border: none !important;
   border-bottom: 1px solid gainsboro !important;
   text-align: justify !important;
 }
 
-.contact-content .accordion {
+.contact-content .accordion,
+.single-product-info .accordion {
   --bs-accordion-border-width: 0 !important;
 }
 
