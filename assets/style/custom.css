@@ -31,7 +31,7 @@ body {
   height: 70vh;
 }
 
-.vh-80{
+.vh-80 {
   height: 80vh;
 }
 
@@ -466,7 +466,7 @@ footer input {
   }
 }
 
-@media (min-width: 1023px) and (max-width: 1200px) {
+@media (min-width: 767px) and (max-width: 1200px) {
   .header-banner {
     clip-path: polygon(
       0% 0%,
@@ -478,6 +478,9 @@ footer input {
       0% 97%
     );
     height: 40vh;
+  }
+  .vh-tablet-50 {
+    height: 50vh;
   }
 }
 /* Animation */

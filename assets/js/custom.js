@@ -18,7 +18,7 @@ const accordionCollapseItems = makeObjectsIterable(
   document.querySelectorAll(".accordion-collapse")
 );
 const shoppingBagElements = makeObjectsIterable(
-  document.querySelectorAll(".fa-bag-shopping")
+  document.querySelectorAll(".toast-trigger")
 );
 const colorChangeHandlerElements = makeObjectsIterable(
   document.querySelectorAll(".color-change-class")

@@ -56,7 +56,7 @@
           <div class="nav-items">
             <div class="d-flex align-content-center align-items-center">
               <i
-                class="fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
+                class="toast-trigger fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#cartCollapse"
@@ -171,25 +171,28 @@
         </div>
         <!-- CART -->
         <div
-          id="cartCollapse"
-          class="accordion-collapse collapse bg-white w-25 w-mobile-100 float-md-end m-0 me-md-5 mt-5 pt-2 mt-md-0 pt-md-0 rounded-2"
-          data-bs-parent="#accordionExample"
+        id="cartCollapse"
+        class="accordion-collapse collapse bg-white w-25 w-mobile-100 float-md-end m-0 me-md-5 mt-5 pt-2 mt-md-0 pt-md-0 rounded-2"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="d-flex justify-content-between align-items-center px-4">
+          <h3 class="fs-4 text-center my-3">ADDED TO SHOPPING BAG</h3>
+          <i
+            class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#cartCollapse"
+            aria-expanded="true"
+            aria-controls="cartCollapse"
+          ></i>
+        </div>
+        <div
+          class="cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
         >
-          <div class="d-flex justify-content-between align-items-center px-4">
-            <h3 class="fs-4 text-center my-3">ADDED TO SHOPPING BAG</h3>
-            <i
-              class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#cartCollapse"
-              aria-expanded="true"
-              aria-controls="cartCollapse"
-            ></i>
-          </div>
-          <div
-            class="cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
-          >
-            <div class="row row-cols-2">
+          <a
+            href="/zardouz/single-product.html"
+            class="text-black text-decoration-none"
+            ><div class="row row-cols-2">
               <div class="col-3">
                 <img
                   class="img-fluid rounded-1 w-100"
@@ -205,8 +208,12 @@
                 <span>Quantity: 1</span>
                 <span>Size: 36</span>
               </div>
-            </div>
-            <hr class="zardouz-underline" />
+            </div></a
+          >
+          <a
+            href="/zardouz/single-product.html"
+            class="text-black text-decoration-none"
+          >
             <div class="row row-cols-2">
               <div class="col-3">
                 <img
@@ -224,7 +231,11 @@
                 <span>Size: 36</span>
               </div>
             </div>
-            <hr />
+          </a>
+          <a
+            href="/zardouz/single-product.html"
+            class="text-black text-decoration-none"
+          >
             <div class="row row-cols-2">
               <div class="col-3">
                 <img
@@ -242,20 +253,21 @@
                 <span>Size: 36</span>
               </div>
             </div>
-          </div>
-          <div class="d-flex flex-column align-items-center">
-            <button
-              class="w-75 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
-            >
-              CHECKOUT
-            </button>
-            <button
-              class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
-            >
-              VIEW SHOPPING BAG
-            </button>
-          </div>
+          </a>
         </div>
+        <div class="d-flex flex-column align-items-center">
+          <button
+            class="w-75 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
+          >
+            CHECKOUT
+          </button>
+          <button
+            class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+          >
+            VIEW SHOPPING BAG
+          </button>
+        </div>
+      </div>
         <!-- End Collapse menus -->
       </div>
       <div
@@ -270,7 +282,7 @@
         </div>
         <div class="responsive-menu-items d-flex gap-3">
           <i
-            class="fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
+            class="toast-trigger fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#cartCollapse"
@@ -306,7 +318,7 @@
       <!-- Main start -->
       <main class="overflow-x-hidden">
         <div
-          class="select-language my-5 d-flex justify-content-center align-items-center gap-2"
+          class="select-language mx-5 mx-md-1 my-5 d-flex justify-content-center align-items-center gap-0 gap-md-2"
         >
           <label class="fw-bold">View contact information for</label>
           <div class="language-form">
@@ -780,7 +792,9 @@
     >
       <div class="d-flex align-items-center justify-content-around">
         <div class="toast-body">Your shopping bag is empty</div>
-        <a class="bag-toast-btn zardouz-underline text-white cursor-pointer">
+        <a
+          class="bag-toast-btn zardouz-underline text-white cursor-pointer"
+        >
           Close
         </a>
       </div>
