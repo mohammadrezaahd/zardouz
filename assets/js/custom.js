@@ -62,14 +62,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// window.addEventListener("click", () => {
-//   accordionCollapseItems.forEach((item) => {
-//     if (item.classList.contains("show")) {
-//       item.classList.remove("show");
-//     }
-//   });
-// });
-
 //Apply styles for canvas open and close
 offcanvasRightElements.forEach((item) => {
   //add class when sidebar opens
@@ -121,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
           endY = e.changedTouches[0].clientY;
           if(startY > endY){
             window.scrollTo({
-              top: window.scrollY + (window.innerHeight / 2),
+              top: window.scrollY + (window.innerHeight),
               behavior: "smooth",
             });
           } else {
@@ -143,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
           singleProductSlider.addEventListener("wheel", wheelHandler);
           singleProductSlider.addEventListener("touchstart", touchStartHandler);
-        }, 400);
+        }, 300);
       },
     },
   });

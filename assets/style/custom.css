@@ -464,6 +464,11 @@ footer input {
     );
     height: 60vh;
   }
+  .language-form > select {
+    padding-right: 2rem !important;
+    padding-left: 0.5rem !important;
+    margin-left: 1rem;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1200px) {
