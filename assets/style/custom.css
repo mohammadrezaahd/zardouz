@@ -35,6 +35,10 @@ body {
   height: 80vh;
 }
 
+.h-33 {
+ height: 33% !important; 
+}
+
 .w-10 {
   width: 10%;
 }
