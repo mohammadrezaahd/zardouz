@@ -63,6 +63,10 @@ body {
   cursor: pointer;
 }
 
+.cursor-not-allowed {
+  cursor: not-allowed !important;
+}
+
 .my-6 {
   margin-top: 6rem !important;
   margin-bottom: 6rem !important;
@@ -98,6 +102,14 @@ body {
 
 .bottom-5 {
   bottom: 5%;
+}
+
+.top-11 {
+  top: 11% !important;
+}
+
+.h-fit-content {
+  height: fit-content;
 }
 
 .object-center {
@@ -376,7 +388,9 @@ footer input {
   transform: translateX(-50%) translateY(100%);
 }
 
-.language-form > .form-select:focus {
+.language-form > .form-select:focus,
+.size-select > .form-select:focus,
+.color-select > .form-select:focus {
   box-shadow: none !important;
   border: 1px solid gainsboro;
 }
@@ -422,6 +436,64 @@ footer input {
   -ms-transform: rotate(0);
   -o-transform: rotate(0);
 }
+
+/* product count controller */
+.quantity-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+}
+
+.quantity-field .value-button {
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 100%;
+  padding: 0;
+  background: #eee;
+  outline: none;
+  cursor: pointer;
+}
+
+.quantity-field .value-button:hover {
+  background: rgb(230, 230, 230);
+}
+
+.quantity-field .value-button:active {
+  background: rgb(210, 210, 210);
+}
+
+.quantity-field .decrease-button {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+.quantity-field .increase-button {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+.quantity-field .number {
+  display: inline-block;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 100%;
+  line-height: 40px;
+  font-size: 11pt;
+  box-sizing: border-box;
+  background: white;
+  font-family: calibri;
+}
+
+.quantity-field .number::selection {
+  background: none;
+}
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -451,6 +523,9 @@ footer input {
   }
   .w-mobile-100 {
     width: 100% !important;
+  }
+  .w-mobile-50 {
+    width: 50% !important;
   }
   .header-banner {
     clip-path: polygon(

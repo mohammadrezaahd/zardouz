@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/zardouz/utilities/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/zardouz/assets/style/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>ZARDOUZ | Shopping-bag</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Header start -->
+      <header
+        class="header-banner py-2 bg-top px-0 px-md-5 d-flex flex-column align-content-center justify-content-end"
+        style="background-image: url('/zardouz/assets//images/contact-us.png')"
+      >
+        <!-- Start page title -->
+        <div class="mb-4 text-center">
+          <h1 class="text-white">SHOPPING BAG</h1>
+        </div>
+        <!-- End page title -->
+      </header>
+      <!-- Header end -->
+      <!-- Start nav -->
+      <div class="nav-container fixed-top">
+        <nav
+          class="nav-bar bg-white d-none d-md-flex justify-content-between align-content-center align-items-center px-5 py-1"
+        >
+          <div class="contact-btn">
+            <div
+              data-bs-toggle="offcanvas"
+              data-bs-target="#contactOffCanvas"
+              aria-controls="contactOffCanvas"
+              class="menu d-flex align-items-center align-content-center cursor-pointer"
+            >
+              <i class="fa fa-thin fa-plus text-black me-2"></i>
+              <span class="text-black">Contact Us</span>
+            </div>
+          </div>
+
+          <div class="logo">
+            <a
+              href="/zardouz/index.html"
+              class="fs-2 text-black text-decoration-none"
+              >ZAR-DOUZ</a
+            >
+          </div>
+
+          <div class="nav-items">
+            <div class="d-flex align-content-center align-items-center">
+              <i
+                class="toast-trigger fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#cartCollapse"
+                aria-expanded="true"
+                aria-controls="cartCollapse"
+              >
+                <span class="cart-count text-white">2</span>
+              </i>
+              <!-- Shopping bag icon -->
+              <i
+                class="fa fa-thin fa-user text-black mx-4 cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#accountCollapse"
+                aria-expanded="true"
+                aria-controls="accountCollapse"
+              ></i>
+              <!-- User profile icon -->
+              <i
+                class="fa fa-thin fa-magnifying-glass text-black cursor-pointer accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#searchCollapse"
+                aria-expanded="true"
+                aria-controls="searchCollapse"
+              ></i>
+              <!-- Search icon -->
+              <div
+                class="menu d-flex align-content-center align-items-center ms-4 cursor-pointer"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#menuOffCanvas"
+                aria-controls="menuOffCanvas"
+              >
+                <i class="fa fa-solid fa-bars text-black"></i>
+                <!-- Hamburger menu icon -->
+                <span class="text-black">Menu</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Start Collapse menus -->
+        <!-- SEARCH -->
+        <div
+          id="searchCollapse"
+          class="accordion-collapse collapse bg-white w-50 float-end me-5"
+          data-bs-parent="#accordionExample"
+        >
+          <div
+            class="accordion-body justify-content-between align-items-center p-4"
+          >
+            <div class="row row-cols-2">
+              <div class="wave-group border-black border-bottom">
+                <input required="" type="text" class="input" />
+                <label class="label">
+                  <span class="label-char" style="--index: 0">
+                    What are you looking for?
+                  </span>
+                </label>
+              </div>
+              <div class="d-flex justify-content-end">
+                <span
+                  data-bs-toggle="collapse"
+                  data-bs-target="#searchCollapse"
+                  aria-expanded="true"
+                  aria-controls="searchCollapse"
+                  class="close-search text-black text-decoration-underline cursor-pointer"
+                  >CANCEL</span
+                >
+              </div>
+            </div>
+
+            <div class="row row-cols-3 mt-5">
+              <div class="col-4">
+                <h5 class="fw-bold">TRENDING SEARCHES</h5>
+                <div class="d-flex flex-column lh-lg">
+                  <a class="text-black" href="">Handbags</a>
+                  <a class="text-black" href="">Accessories</a>
+                  <a class="text-black" href="">Tops & Shirts</a>
+                  <a class="text-black" href="">Skirt</a>
+                </div>
+              </div>
+              <div class="col-4">
+                <h5 class="fw-bold">WHAT'S NEW</h5>
+                <div class="d-flex flex-column lh-lg">
+                  <a class="text-black" href="">Women</a>
+                  <a class="text-black" href="">Men</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ACCOUNT -->
+        <div
+          id="accountCollapse"
+          class="accordion-collapse collapse bg-white float-end me-5 mt-5 pt-2 mt-md-0 pt-md-0"
+          data-bs-parent="#accordionExample"
+        >
+          <div
+            class="accordion-body d-flex flex-column justify-content-between align-items-start p-4 lh-lg"
+          >
+            <a class="text-decoration-none text-dark" href="">SIGN IN</a>
+            <a class="text-decoration-none text-dark" href="">MY ORDERS</a>
+            <a class="text-decoration-none text-dark" href=""
+              >ACCOUNT SETTINGS</a
+            >
+            <a class="text-decoration-none text-dark" href="">WALLET</a>
+            <a class="text-decoration-none text-dark" href="">SAVED ITEMS</a>
+            <a class="text-decoration-none text-dark" href=""
+              >MY APPOINTMENTS</a
+            >
+          </div>
+        </div>
+        <!-- CART -->
+        <div
+          id="cartCollapse"
+          class="accordion-collapse collapse bg-white w-25 w-mobile-100 float-md-end m-0 me-md-5 mt-5 pt-2 mt-md-0 pt-md-0 rounded-2"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="d-flex justify-content-between align-items-center px-4">
+            <h3 class="fs-4 text-center my-3">ADDED TO SHOPPING BAG</h3>
+            <i
+              class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#cartCollapse"
+              aria-expanded="true"
+              aria-controls="cartCollapse"
+            ></i>
+          </div>
+          <div
+            class="cart-accordion-body d-flex flex-column justify-content-between align-items-start p-4 zardouz-underline border-1"
+          >
+            <a
+              href="/zardouz/single-product.html"
+              class="text-black text-decoration-none"
+              ><div class="row row-cols-2">
+                <div class="col-3">
+                  <img
+                    class="img-fluid rounded-1 w-100"
+                    src="/zardouz//assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-9 d-flex flex-column lh-lg justify-content-around"
+                >
+                  <h5>WOMEN'S SKIRT</h5>
+                  <span class="fs-md">$ 1,190</span>
+                  <span>Quantity: 1</span>
+                  <span>Size: 36</span>
+                </div>
+              </div></a
+            >
+            <a
+              href="/zardouz/single-product.html"
+              class="text-black text-decoration-none"
+            >
+              <div class="row row-cols-2">
+                <div class="col-3">
+                  <img
+                    class="img-fluid rounded-1 w-100"
+                    src="/zardouz//assets/images/6f5a17aa-1b3b-4125-b62a-71e9b282275c.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-9 d-flex flex-column lh-lg justify-content-around"
+                >
+                  <h5>WOMEN'S SKIRT</h5>
+                  <span class="fs-md">$ 1,190</span>
+                  <span>Quantity: 1</span>
+                  <span>Size: 36</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="/zardouz/single-product.html"
+              class="text-black text-decoration-none"
+            >
+              <div class="row row-cols-2">
+                <div class="col-3">
+                  <img
+                    class="img-fluid rounded-1 w-100"
+                    src="/zardouz//assets/images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="col-9 d-flex flex-column lh-lg justify-content-around"
+                >
+                  <h5>WOMEN'S SKIRT</h5>
+                  <span class="fs-md">$ 1,190</span>
+                  <span>Quantity: 1</span>
+                  <span>Size: 36</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <button
+              class="w-75 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
+            >
+              CHECKOUT
+            </button>
+            <button
+              class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+            >
+              VIEW SHOPPING BAG
+            </button>
+          </div>
+        </div>
+        <!-- End Collapse menus -->
+      </div>
+      <div
+        class="nav-bar mobile-nav d-flex justify-content-between align-items-center d-md-none fixed-top p-3 bg-white"
+      >
+        <div class="responsive-logo">
+          <a
+            href="/zardouz/index.html"
+            class="fs-3 text-black text-decoration-none"
+            >ZAR-DOUZ</a
+          >
+        </div>
+        <div class="responsive-menu-items d-flex gap-3">
+          <i
+            class="toast-trigger fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#cartCollapse"
+            aria-expanded="true"
+            aria-controls="cartCollapse"
+          >
+            <span class="cart-count text-white">2</span>
+          </i>
+          <i
+            class="fa fa-thin fa-user text-black cursor-pointer accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accountCollapse"
+            aria-expanded="true"
+            aria-controls="accountCollapse"
+          ></i>
+          <i
+            class="fa fa-thin fa-magnifying-glass text-black cursor-pointer accordion-button"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#responsiveSearchOffcanvas"
+            aria-controls="responsiveSearchOffcanvas"
+          ></i>
+          <i
+            class="fa fa-solid fa-bars text-black"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuOffCanvas"
+            aria-controls="menuOffCanvas"
+          ></i>
+        </div>
+      </div>
+      <!-- End nav -->
+      <!-- Main start -->
+      <main
+        class="d-flex flex-wrap flex-md-nowrap flex-column-reverse flex-md-row"
+      >
+        <!-- main content -->
+        <div
+          class="cart-items w-75 w-mobile-100 m-md-4 p-3 p-md-0 d-flex flex-column gap-5"
+        >
+          <h6
+            class="fs-2 w-100 border-bottom border-2 border-secondary border-opacity-50"
+          >
+            YOUR SELECTIONS
+          </h6>
+          <!-- item 1 -->
+          <div class="items d-md-flex">
+            <div class="cart-item-image w-25 w-mobile-100 rounded-2">
+              <img
+                class="img-fluid object-center object-fit-contain rounded-2"
+                src="/zardouz/assets/images/705d9a37-4fc1-4bdc-9f83-9240cdfde0dd.png"
+                alt="product one"
+              />
+            </div>
+            <div
+              class="cart-item-details w-75 w-mobile-100 ms-md-5 d-flex flex-column gap-4 mt-5 mt-md-0"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <h4>WOMEN'S SKIRT</h4>
+                <div class="quantity-field">
+                  <button
+                    class="value-button decrease-button"
+                    onclick="decreaseValue(this)"
+                    title="Azalt"
+                  >
+                    -
+                  </button>
+                  <div class="number">0</div>
+                  <button
+                    class="value-button increase-button"
+                    onclick="increaseValue(this, 5)"
+                    title="Arrtır"
+                  >
+                    +
+                  </button>
+                </div>
+                <span>$ 1,190</span>
+              </div>
+
+              <h4>Variation: light beige</h4>
+
+              <div class="d-flex align-items-center gap-2 gap-md-5">
+                <div class="size-select d-flex w-50 align-items-center gap-2">
+                  <h4>Size:</h4>
+                  <select
+                    class="form-select py-1 ps-1"
+                    aria-label="Default select example"
+                  >
+                    <option selected value="0">36</option>
+                    <option value="1">37</option>
+                    <option value="1">38</option>
+                    <option
+                      class="bg-secondary bg-opacity-50"
+                      disabled
+                      value="1"
+                    >
+                      39
+                    </option>
+                  </select>
+                </div>
+                <div class="color-select d-flex w-50 align-items-center gap-2">
+                  <h4>Color:</h4>
+                  <select
+                    class="form-select py-1 ps-1"
+                    aria-label="Default select example"
+                  >
+                    <option selected value="0">Black</option>
+                    <option value="1">Red</option>
+                    <option value="1">Gray</option>
+                    <option
+                      class="bg-secondary bg-opacity-50"
+                      disabled
+                      value="1"
+                    >
+                      Green
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <p>Enjoy complimentary delivery or collect in store</p>
+
+              <div class="d-flex gap-2">
+                <a class="fw-bolder text-black" href="">REMOVE</a>
+                <span class="fw-bolder text-black">|</span>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa fa-bookmark"></i>
+                  <a class="fw-bolder text-black" href="">SAVE ITEM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- item 2 -->
+          <div class="items d-md-flex">
+            <div class="cart-item-image w-25 w-mobile-100 rounded-2">
+              <img
+                class="img-fluid object-center object-fit-contain rounded-2"
+                src="/zardouz/assets/images/61c910ab011e680826e38b5a4886cc7ca8606c15.png"
+                alt="product one"
+              />
+            </div>
+            <div
+              class="cart-item-details w-75 w-mobile-100 ms-md-5 d-flex flex-column gap-4 mt-5 mt-md-0"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <h4>WOMEN'S SKIRT</h4>
+                <div class="quantity-field">
+                  <button
+                    class="value-button decrease-button"
+                    onclick="decreaseValue(this)"
+                    title="Azalt"
+                  >
+                    -
+                  </button>
+                  <div class="number">0</div>
+                  <button
+                    class="value-button increase-button"
+                    onclick="increaseValue(this, 5)"
+                    title="Arrtır"
+                  >
+                    +
+                  </button>
+                </div>
+                <span>$ 1,190</span>
+              </div>
+
+              <h4>Variation: light beige</h4>
+
+              <div class="d-flex align-items-center gap-2 gap-md-5">
+                <div class="size-select d-flex w-50 align-items-center gap-2">
+                  <h4>Size:</h4>
+                  <select
+                    class="form-select py-1 ps-1"
+                    aria-label="Default select example"
+                  >
+                    <option selected value="0">36</option>
+                    <option value="1">37</option>
+                    <option value="1">38</option>
+                    <option
+                      class="bg-secondary bg-opacity-50"
+                      disabled
+                      value="1"
+                    >
+                      39
+                    </option>
+                  </select>
+                </div>
+                <div class="color-select d-flex w-50 align-items-center gap-2">
+                  <h4>Color:</h4>
+                  <select
+                    class="form-select py-1 ps-1"
+                    aria-label="Default select example"
+                  >
+                    <option selected value="0">Black</option>
+                    <option value="1">Red</option>
+                    <option value="1">Gray</option>
+                    <option
+                      class="bg-secondary bg-opacity-50"
+                      disabled
+                      value="1"
+                    >
+                      Green
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <p>Enjoy complimentary delivery or collect in store</p>
+
+              <div class="d-flex gap-2">
+                <a class="fw-bolder text-black" href="">REMOVE</a>
+                <span class="fw-bolder text-black">|</span>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa fa-bookmark"></i>
+                  <a class="fw-bolder text-black" href="">SAVE ITEM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- item 3 -->
+          <div class="items d-md-flex">
+            <div class="cart-item-image w-25 w-mobile-100 rounded-2">
+              <img
+                class="img-fluid object-center object-fit-contain rounded-2"
+                src="/zardouz/assets/images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                alt="product one"
+              />
+            </div>
+            <div
+              class="cart-item-details w-75 w-mobile-100 ms-md-5 d-flex flex-column gap-4 mt-5 mt-md-0"
+            >
+              <div class="d-flex justify-content-between align-items-center">
+                <h4>WOMEN'S SKIRT</h4>
+                <div class="quantity-field">
+                  <button
+                    class="value-button decrease-button"
+                    onclick="decreaseValue(this)"
+                    title="Azalt"
+                  >
+                    -
+                  </button>
+                  <div class="number">0</div>
+                  <button
+                    class="value-button increase-button"
+                    onclick="increaseValue(this, 5)"
+                    title="Arrtır"
+                  >
+                    +
+                  </button>
+                </div>
+                <span>$ 1,190</span>
+              </div>
+
+              <h4>Variation: light beige</h4>
+
+              <div class="d-flex align-items-center gap-2 gap-md-5">
+                <div class="size-select d-flex w-50 align-items-center gap-2">
+                  <h4>Size:</h4>
+                  <select
+                    class="form-select py-1 ps-1"
+                    aria-label="Default select example"
+                  >
+                    <option selected value="0">36</option>
+                    <option value="1">37</option>
+                    <option value="1">38</option>
+                    <option
+                      class="bg-secondary bg-opacity-50"
+                      disabled
+                      value="1"
+                    >
+                      39
+                    </option>
+                  </select>
+                </div>
+                <div class="color-select d-flex w-50 align-items-center gap-2">
+                  <h4>Color:</h4>
+                  <select
+                    class="form-select py-1 ps-1"
+                    aria-label="Default select example"
+                  >
+                    <option selected value="0">Black</option>
+                    <option value="1">Red</option>
+                    <option value="1">Gray</option>
+                    <option
+                      class="bg-secondary bg-opacity-50"
+                      disabled
+                      value="1"
+                    >
+                      Green
+                    </option>
+                  </select>
+                </div>
+              </div>
+
+              <p>Enjoy complimentary delivery or collect in store</p>
+
+              <div class="d-flex gap-2">
+                <a class="fw-bolder text-black" href="">REMOVE</a>
+                <span class="fw-bolder text-black">|</span>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa fa-bookmark"></i>
+                  <a class="fw-bolder text-black" href="">SAVE ITEM</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+
+        <!-- Sidebar -->
+        <div
+          class="responsive-summary d-flex d-md-none justify-content-center fixed-bottom bottom-5"
+        >
+          <button
+            class="btn btn-dark w-75 text-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom"
+            aria-controls="offcanvasBottom"
+          >
+            Cart details
+          </button>
+        </div>
+        <div
+          class="summary w-25 d-none d-md-block sticky-top start-100 top-11 h-fit-content m-2 mt-0 p-3 border border-2 border-secondary border-opacity-25 rounded-3 shadow shadow-sm"
+        >
+          <h4
+            class="text-black w-100 border-1 border-bottom border-secondary border-opacity-75 pb-1"
+          >
+            Order summary
+          </h4>
+          <div
+            class="summary-details d-flex flex-column justify-content-center gap-2 mt-4"
+          >
+            <div
+              class="summary-details-item d-flex align-items-center justify-content-between"
+            >
+              <h6>Subtotal</h6>
+              <span>$2,300</span>
+            </div>
+            <div
+              class="summary-details-item d-flex align-items-center justify-content-between"
+            >
+              <h6>Shipping</h6>
+              <span>Free</span>
+            </div>
+            <div
+              class="summary-details-item d-flex align-items-center justify-content-between"
+            >
+              <h6>Estimated Tax</h6>
+              <span>%15</span>
+            </div>
+            <div
+              class="summary-details-item d-flex align-items-center justify-content-between"
+            >
+              <h6>Estimated Total</h6>
+              <span>$2,315</span>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center mt-5">
+            <button
+              class="w-100 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
+            >
+              CHECKOUT
+            </button>
+            <button
+              class="w-100 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+            >
+              VIEW SHOPPING BAG
+            </button>
+          </div>
+        </div>
+      </main>
+      <!-- Main end -->
+      <!-- Footer start -->
+      <footer
+        class="d-flex flex-column align-content-center justify-content-between align-items-center mx-0 mx-md-5 px-3 px-md-5 my-6 vh-50"
+      >
+        <div class="footer-form d-flex flex-column justify-content-between">
+          <h3 class="text-center mx-2 mx-md-5">
+            Receive exclusive promotions, private sales and news
+          </h3>
+
+          <form class="d-flex flex-column">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="form-text py-3 my-5 rounded-1"
+            />
+            <button class="rounded-1 bg-dark text-white py-3" type="submit">
+              Sign me up
+            </button>
+            <span class="my-5 text-center"
+              >By subscribing, you confirm that you have read the
+              <a href="#" class="text-decoration-underline text-black fw-bold">
+                Privacy Policy.
+              </a>
+            </span>
+          </form>
+        </div>
+        <div
+          class="footer-links d-flex gap-2 gap-md-4 justify-content-around flex-wrap w-50 w-mobile-100"
+        >
+          <a class="text-decoration-none text-black">Help</a>
+          <a class="text-decoration-none text-black" href="">My purchases</a>
+          <a class="text-decoration-none text-black" href="">Returns</a>
+          <a class="text-decoration-none text-black" href="">Returns</a>
+          <a class="text-decoration-none text-black" href="">Company</a>
+          <a class="text-decoration-none text-black" href=""
+            >Work with Zardouz</a
+          >
+          <a class="text-decoration-none text-black" href="">Site map</a>
+          <a class="text-decoration-none text-black" href="">sustainability</a>
+          <a class="text-decoration-none text-black" href="">store locator</a>
+          <a class="text-decoration-none text-black" href="">special days</a>
+          <a class="text-decoration-none text-black" href=""
+            >Renew your clothes</a
+          >
+        </div>
+        <div
+          class="footer-socials d-flex flex-wrap justify-content-center gap-4 gap-md-5 py-5 w-mobile-100"
+        >
+          <i class="fa fa-brands fa-square-instagram fs-2"></i>
+          <i class="fa fa-brands fa-facebook-f fs-2"></i>
+          <i class="fa fa-brands fa-linkedin-in fs-2"></i>
+          <i class="fa fa-brands fa-x-twitter fs-2"></i>
+          <i class="fa fa-brands fa-youtube fs-2"></i>
+          <i class="fa fa-brands fa-pinterest fs-2"></i>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+
+    <!-- Main menu Offcanvas start -->
+    <div
+      class="offcanvas offcanvas-end px-4 w-mobile-100"
+      tabindex="-1"
+      id="menuOffCanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-end">
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body lh-lg d-flex flex-column">
+        <div class="d-flex align-items-center">
+          <a class="text-decoration-none text-black cursor-pointer me-2"
+            >New in</a
+          >
+          <li class="fa fa-thin fa-angle-right fs-05"></li>
+        </div>
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Women</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Men</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Handbags</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Children</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Gifts</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Customize</a
+        >
+        <a
+          class="text-decoration-none text-black cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#itemsOffCanvas"
+          aria-controls="itemsOffCanvas"
+          >Renew</a
+        >
+
+        <div class="mt-5 d-flex flex-column align-items-start lh-lg">
+          <a class="text-black text-decoration-none menu__link" href=""
+            >Sign in</a
+          >
+          <a class="text-black text-decoration-none menu__link" href=""
+            >My orders</a
+          >
+          <a
+            class="text-black text-decoration-none menu__link"
+            href="/zardouz/contact-us.html"
+            >Contact us</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Main menu Offcanvas end -->
+    <!-- Nested menu Offcanvas start 2 -->
+    <div
+      class="offcanvas offcanvas-end px-4 w-mobile-100"
+      tabindex="-1"
+      id="itemsOffCanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menuOffCanvas"
+          aria-controls="menuOffCanvas"
+          data-bs-dismiss="offcanvas2"
+          aria-label="Close"
+        >
+          <li class="fa fa-thin fa-angle-left fs-05"></li>
+          <span class="text-decoration-underline text-black lh-1" href=""
+            >Back</span
+          >
+        </div>
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body lh-lg d-flex flex-column">
+        <div>
+          <h2>Handbags</h2>
+        </div>
+        <div
+          class="row row-cols-2 justify-content-between align-items-center align-content-center my-4"
+        >
+          <a class="col-6 text-decoration-none text-black cursor-pointer">
+            <img
+              class="col-12"
+              src="/zardouz//assets/images/menu-item-1.png"
+              alt=""
+            />
+            <span class="fs-6">summer handbags</span>
+          </a>
+          <a class="col-6 text-decoration-none text-black cursor-pointer">
+            <img
+              class="col-12"
+              src="/zardouz//assets/images/menu-item-2.png"
+              alt=""
+            />
+            <span class="fs-6">new in handbags</span>
+          </a>
+        </div>
+
+        <div class="mt-5 d-flex flex-column lh-lg">
+          <a class="text-black text-decoration-none" href="">Sign in</a>
+          <a class="text-black text-decoration-none" href="">My orders</a>
+          <a class="text-black text-decoration-none" href="">Contact us</a>
+          <a class="text-black text-decoration-none" href="">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <!-- Nested menu offcanvas end -->
+    <!-- Contact menu Offcanvas start 2 -->
+    <div
+      class="offcanvas offcanvas-end px-4"
+      tabindex="-1"
+      id="contactOffCanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between">
+        <div
+          class="cursor-pointer"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+          data-bs-dismiss="offcanvas2"
+          aria-label="Close"
+        ></div>
+        <i
+          class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></i>
+      </div>
+      <div class="offcanvas-body lh-lg d-flex flex-column">
+        <h3 class="fw-bold">CONTACT US</h3>
+        <div
+          class="d-flex flex-column justify-content-between gap-3 align-items-start my-4"
+        >
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >CALL US +283474865</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >WHATSAPP US</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a
+              class="text-black fw-bold text-decoration-none zardouz-underline p-0 border-black border-1 cursor-pointer"
+              >LIVE CHAT</a
+            >
+            <p class="text-secondary lh-sm text-break w-75 small">
+              Monday - Saturday from 9 AM to 11 PM Sunday from 10 AM to 9 PM
+            </p>
+          </div>
+          <div>
+            <a class="text-black fw-bold text-decoration-none"
+              >DO you need further assistance?</a
+            >
+          </div>
+          <div>
+            <a
+              href="/zardouz/contact-us.html"
+              class="text-black fw-bold text-decoration-none menu__link cursor-pointer"
+              >GET IN CONTACT WITH US</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact menu offcanvas end -->
+    <!-- Responsive search menu offcanvas start -->
+    <div
+      class="offcanvas offcanvas-end p-3 w-100"
+      tabindex="-1"
+      id="responsiveSearchOffcanvas"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header d-flex justify-content-between p-0">
+        <div class="offcanvas-body p-0 overflow-hidden">
+          <div class="justify-content-between align-items-center">
+            <div class="row row-cols-2 align-items-center">
+              <div class="wave-group border-black border-bottom col-8">
+                <input required="" type="text" class="input" />
+                <label class="label">
+                  <span class="label-char" style="--index: 0">
+                    What are you looking for?
+                  </span>
+                </label>
+              </div>
+              <div class="d-flex justify-content-end col-4">
+                <span
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  data-bs-dismiss="offcanvas"
+                  class="close-search text-black text-decoration-underline cursor-pointer"
+                  >CANCEL</span
+                >
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <div class="">
+                <h5 class="fw-bold">TRENDING SEARCHES</h5>
+                <div class="d-flex flex-column lh-lg">
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Handbags</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Accessories</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Tops & Shirts</a>
+                  </div>
+                  <div
+                    class="menu d-flex align-items-center align-content-center cursor-pointer"
+                  >
+                    <i
+                      class="fa fa-thin fa-magnifying-glass text-black small me-2"
+                    ></i>
+                    <a class="text-black">Skirt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Responsive menu offcanvas end -->
+
+    <!-- Start toast -->
+    <div
+      class="bagToast toast-hidden rounded-2 w-25 w-mobile-100 sticky-bottom bottom-5 align-items-center text-bg-dark border-0 py-4 m-0 ms-md-2"
+    >
+      <div class="d-flex align-items-center justify-content-around">
+        <div class="toast-body">Your shopping bag is empty</div>
+        <a class="bag-toast-btn zardouz-underline text-white cursor-pointer">
+          Close
+        </a>
+      </div>
+    </div>
+    <!-- End toast -->
+    <!-- Start cart details menu offcanvas -->
+    <div
+      class="offcanvas offcanvas-bottom"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5
+          class="offcanvas-title border-1 w-100 border-bottom border-secondary border-opacity-75 pb-1"
+          id="offcanvasBottomLabel"
+        >
+          Order summary
+        </h5>
+        <div class="offcanvas-header d-flex justify-content-end">
+          <i
+            class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></i>
+        </div>
+      </div>
+      <div class="offcanvas-body small">
+        <div
+          class="summary-details d-flex flex-column justify-content-center gap-2"
+        >
+          <div
+            class="summary-details-item d-flex align-items-center justify-content-between"
+          >
+            <h6>Subtotal</h6>
+            <span>$2,300</span>
+          </div>
+          <div
+            class="summary-details-item d-flex align-items-center justify-content-between"
+          >
+            <h6>Shipping</h6>
+            <span>Free</span>
+          </div>
+          <div
+            class="summary-details-item d-flex align-items-center justify-content-between"
+          >
+            <h6>Estimated Tax</h6>
+            <span>%15</span>
+          </div>
+          <div
+            class="summary-details-item d-flex align-items-center justify-content-between"
+          >
+            <h6>Estimated Total</h6>
+            <span>$2,315</span>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center mt-5">
+          <button
+            class="w-100 bg-black text-white rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
+          >
+            CHECKOUT
+          </button>
+          <button
+            class="w-100 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+          >
+            VIEW SHOPPING BAG
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/zardouz/assets/js/custom.js"></script>
+    <script src="/zardouz/utilities/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
