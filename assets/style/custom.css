@@ -51,6 +51,10 @@ body {
   width: 49%;
 }
 
+.h-40 {
+  height: 40% !important;
+}
+
 .h-screen {
   height: 100vh;
 }
