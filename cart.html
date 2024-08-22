@@ -97,11 +97,11 @@
             </div>
           </div>
         </nav>
-        <!-- Start Collapse menus -->
+       <!-- Start Collapse menus -->
         <!-- SEARCH -->
         <div
           id="searchCollapse"
-          class="accordion-collapse collapse bg-white w-50 float-end me-5"
+          class="accordion-collapse auto-collapse collapse bg-white w-50 float-end me-5"
           data-bs-parent="#accordionExample"
         >
           <div
@@ -151,7 +151,7 @@
         <!-- ACCOUNT -->
         <div
           id="accountCollapse"
-          class="accordion-collapse collapse bg-white float-end me-5 mt-5 pt-2 mt-md-0 pt-md-0"
+          class="accordion-collapse auto-collapse collapse bg-white float-end me-5 mt-5 pt-2 mt-md-0 pt-md-0"
           data-bs-parent="#accordionExample"
         >
           <div
@@ -172,7 +172,7 @@
         <!-- CART -->
         <div
           id="cartCollapse"
-          class="accordion-collapse collapse bg-white w-25 w-mobile-100 float-md-end m-0 me-md-5 mt-5 pt-2 mt-md-0 pt-md-0 rounded-2"
+          class="accordion-collapse auto-collapse collapse bg-white w-25 w-mobile-100 float-md-end m-0 me-md-5 mt-5 pt-2 mt-md-0 pt-md-0 rounded-2"
           data-bs-parent="#accordionExample"
         >
           <div class="d-flex justify-content-between align-items-center px-4">
@@ -261,11 +261,13 @@
             >
               CHECKOUT
             </button>
-            <button
-              class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+
+            <a
+              class="w-75 bg-white text-black text-center text-decoration-none rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+              href="/zardouz/cart.html"
             >
               VIEW SHOPPING BAG
-            </button>
+            </a>
           </div>
         </div>
         <!-- End Collapse menus -->
@@ -403,7 +405,13 @@
                 </div>
               </div>
 
-              <p>Enjoy complimentary delivery or collect in store</p>
+              <div class="d-flex justify-content-between">
+                <p>Enjoy complimentary delivery or collect in store</p>
+                <div class="d-flex gap-2 border-1 bg-black text-white align-items-center rounded-2 p-2">
+                  <h6 class="m-0">CUSTOMIZED</h6>
+                  <i class="fa fa-check"></i>
+                </div>
+              </div>
 
               <div class="d-flex gap-2">
                 <a class="fw-bolder text-black" href="">REMOVE</a>

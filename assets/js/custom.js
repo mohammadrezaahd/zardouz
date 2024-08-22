@@ -15,7 +15,7 @@ const accordionCollapseTriggers = makeObjectsIterable(
   document.querySelectorAll(".accordion-button")
 );
 const accordionCollapseItems = makeObjectsIterable(
-  document.querySelectorAll(".accordion-collapse")
+  document.querySelectorAll(".auto-collapse ")
 );
 const shoppingBagElements = makeObjectsIterable(
   document.querySelectorAll(".toast-trigger")

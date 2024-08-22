@@ -130,7 +130,7 @@
         <!-- SEARCH -->
         <div
           id="searchCollapse"
-          class="accordion-collapse collapse bg-white w-50 float-end me-5"
+          class="accordion-collapse auto-collapse collapse bg-white w-50 float-end me-5"
           data-bs-parent="#accordionExample"
         >
           <div
@@ -180,7 +180,7 @@
         <!-- ACCOUNT -->
         <div
           id="accountCollapse"
-          class="accordion-collapse collapse bg-white float-end me-5 mt-5 pt-2 mt-md-0 pt-md-0"
+          class="accordion-collapse auto-collapse collapse bg-white float-end me-5 mt-5 pt-2 mt-md-0 pt-md-0"
           data-bs-parent="#accordionExample"
         >
           <div
@@ -201,7 +201,7 @@
         <!-- CART -->
         <div
           id="cartCollapse"
-          class="accordion-collapse collapse bg-white w-25 w-mobile-100 float-md-end m-0 me-md-5 mt-5 pt-2 mt-md-0 pt-md-0 rounded-2"
+          class="accordion-collapse auto-collapse collapse bg-white w-25 w-mobile-100 float-md-end m-0 me-md-5 mt-5 pt-2 mt-md-0 pt-md-0 rounded-2"
           data-bs-parent="#accordionExample"
         >
           <div class="d-flex justify-content-between align-items-center px-4">
@@ -290,11 +290,13 @@
             >
               CHECKOUT
             </button>
-            <button
-              class="w-75 bg-white text-black rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+
+            <a
+              class="w-75 bg-white text-black text-center text-decoration-none rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
+              href="/zardouz/cart.html"
             >
               VIEW SHOPPING BAG
-            </button>
+            </a>
           </div>
         </div>
         <!-- End Collapse menus -->
@@ -527,15 +529,161 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <!-- Nested accordion -->
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne"
+                            aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne"
+                          >
+                            Clothes
+                          </button>
+                        </h2>
+                        <div
+                          id="panelsStayOpen-collapseOne"
+                          class="accordion-collapse collapse show"
+                        >
+                          <div class="accordion-body">
+                            <span class="">Chose your style</span>
+                            <hr class="mt-0"/>
+                            <div class="items-container d-flex gap-4">
+                              <div
+                                class="item-container w-25 d-flex flex-column gap-3 align-items-center justify-content-center"
+                              >
+                                <div class="w-100 rounded-2">
+                                  <img
+                                    class="img-fluid rounded-2"
+                                    src="/zardouz/assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="bg-black rounded-5 text-center cursor-pointer"
+                                  style="width: 20px; height: 20px"
+                                >
+                                  <i class="fa fa-check text-white"></i>
+                                </div>
+                              </div>
+                              <div
+                                class="item-container w-25 d-flex flex-column gap-3 align-items-center justify-content-center"
+                              >
+                                <div class="w-100 rounded-2">
+                                  <img
+                                    class="img-fluid rounded-2"
+                                    src="/zardouz/assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="bg-black rounded-5 text-center cursor-pointer"
+                                  style="width: 20px; height: 20px"
+                                >
+                                  <i class="fa fa-plus text-white"></i>
+                                </div>
+                              </div>
+                              <div
+                                class="item-container w-25 d-flex flex-column gap-3 align-items-center justify-content-center"
+                              >
+                                <div class="w-100 rounded-2">
+                                  <img
+                                    class="img-fluid rounded-2"
+                                    src="/zardouz/assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="bg-black rounded-5 text-center cursor-pointer"
+                                  style="width: 20px; height: 20px"
+                                >
+                                  <i class="fa fa-plus text-white"></i>
+                                </div>
+                              </div>
+                              <div
+                                class="item-container w-25 d-flex flex-column gap-3 align-items-center justify-content-center"
+                              >
+                                <div class="w-100 rounded-2">
+                                  <img
+                                    class="img-fluid rounded-2"
+                                    src="/zardouz/assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                                    alt=""
+                                  />
+                                </div>
+                                <div
+                                  class="bg-black rounded-5 text-center cursor-pointer"
+                                  style="width: 20px; height: 20px"
+                                >
+                                  <i class="fa fa-plus text-white"></i>
+                                </div>
+                              </div>
+                           
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo"
+                          >
+                            Size
+                          </button>
+                        </h2>
+                        <div
+                          id="panelsStayOpen-collapseTwo"
+                          class="accordion-collapse collapse"
+                        >
+                          <div class="accordion-body d-flex flex-column gap-2">
+                            <input class="w-100 border-0 bg-secondary bg-opacity-10 p-2 rounded-1" type="text" placeholder="around the arm: "/>
+                            <input class="w-100 border-0 bg-secondary bg-opacity-10 p-2 rounded-1" type="text" placeholder="around the chest: "/>
+                            <input class="w-100 border-0 bg-secondary bg-opacity-10 p-2 rounded-1" type="text" placeholder="abdominal circumference: "/>
+                            <input class="w-100 border-0 bg-secondary bg-opacity-10 p-2 rounded-1" type="text" placeholder="height: "/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree"
+                          >
+                            Zipper
+                          </button>
+                        </h2>
+                        <div
+                          id="panelsStayOpen-collapseThree"
+                          class="accordion-collapse collapse"
+                        >
+                          <div class="accordion-body">
+                            <strong
+                              >This is the third item's accordion body.</strong
+                            >
+                            It is hidden by default, until the collapse plugin
+                            adds the appropriate classes that we use to style
+                            each element. These classes control the overall
+                            appearance, as well as the showing and hiding via
+                            CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's
+                            also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the
+                            transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
