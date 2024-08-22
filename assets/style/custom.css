@@ -325,6 +325,26 @@ footer input#email {
   text-align: center;
 }
 
+.single-product-slider > .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.single-product-slider > .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-product-slider > .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Link hover animation */
 
 .menu__link {
@@ -506,6 +526,11 @@ footer input#email {
 .quantity-field .number::selection {
   background: none;
 }
+
+.asd {
+  animation: rotationAnimation 5s infinite;
+  -webkit-animation: rotationAnimation 5s infinite;
+}
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -608,5 +633,22 @@ footer input#email {
   100% {
     left: 0;
     width: 100%;
+  }
+}
+
+@keyframes rotationAnimation {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
