@@ -859,6 +859,9 @@ footer input#email {
   .address-1 > span {
     font-size: .5rem;
   }
+  .checkout-main label {
+    font-size: .5rem;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1200px) {
