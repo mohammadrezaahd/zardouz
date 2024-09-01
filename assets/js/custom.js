@@ -4,6 +4,7 @@ const mainContainer = document.querySelector(".main-container");
 const bagToastBtn = document.querySelector(".bag-toast-btn");
 const bagToastElement = document.querySelector(".bagToast");
 const cartCount = document.querySelector(".cart-count");
+const addressCollapse = document.querySelector(".address-collapse");
 const singleProductSlider = document.querySelector(".single-product-slider");
 const offcanvasRightElements = makeObjectsIterable(
   document.getElementsByClassName("offcanvas")
@@ -25,7 +26,7 @@ const colorChangeHandlerElements = makeObjectsIterable(
 );
 
 //Prevent to open all accordions together
-accordionCollapseTriggers.forEach((trigger) => {
+accordionCollapseTriggers?.forEach((trigger) => {
   trigger.addEventListener("click", () => {
     const openAccordions = accordionCollapseItems.filter((item) =>
       item.classList.contains("show")
@@ -77,7 +78,7 @@ offcanvasRightElements.forEach((item) => {
 });
 
 //Show and hide notification
-shoppingBagElements.forEach((item) => {
+shoppingBagElements?.forEach((item) => {
   item.addEventListener("click", () => {
     //if only cart was empty
     if (bagToastElement.classList.contains("toast-hidden")) {
@@ -86,8 +87,16 @@ shoppingBagElements.forEach((item) => {
   });
 });
 
-bagToastBtn.addEventListener("click", () => {
+bagToastBtn?.addEventListener("click", () => {
   bagToastElement.classList.add("toast-hidden");
+});
+
+//Handle address line 2 collapse
+addressCollapse?.addEventListener("show.bs.collapse", () => {
+  addressCollapse.classList.remove("d-none");
+});
+addressCollapse?.addEventListener("hidden.bs.collapse", () => {
+  addressCollapse.classList.add("d-none");
 });
 
 //single product swiper

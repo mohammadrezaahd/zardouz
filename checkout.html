@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/zardouz/assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="/zardouz/utilities/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/zardouz/assets/style/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>ZARDOUZ | Contact-us</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Start nav -->
+      <div class="nav-container fixed-top">
+        <nav
+          class="nav-bar-2 bg-white d-none d-md-flex justify-content-between align-content-center align-items-center px-5 py-1"
+        >
+          <div class="backShop-btn">
+            <div
+              class="menu d-flex align-items-center align-content-center cursor-pointer"
+            >
+              <i class="fa fa-thin fa-angle-left text-black me-2"></i>
+              <a
+                href="/zardouz/cart.html"
+                class="text-decoration-none text-black"
+                >Back to shopping bag</a
+              >
+            </div>
+          </div>
+
+          <div class="logo">
+            <a
+              href="/zardouz/index.html"
+              class="fs-2 text-black text-decoration-none"
+              >ZAR-DOUZ</a
+            >
+          </div>
+
+          <div class="nav-items d-flex align-items-center gap-1">
+            <i class="fa fa-phone small"></i>
+            <a class="text-black text-decoration-none" href="/">+34883992</a>
+          </div>
+        </nav>
+      </div>
+      <div
+        class="nav-bar mobile-nav d-flex justify-content-between align-items-center d-md-none fixed-top p-3 bg-white"
+      >
+        <div class="responsive-logo">
+          <a
+            href="/zardouz/index.html"
+            class="fs-3 text-black text-decoration-none"
+            >ZAR-DOUZ</a
+          >
+        </div>
+        <div class="responsive-menu-items d-flex align-items-center gap-3">
+          <div class="backShop-btn small">
+            <div
+              class="menu d-flex align-items-center align-content-center cursor-pointer"
+            >
+              <a
+                href="/zardouz/cart.html"
+                class="text-decoration-none text-black small"
+                >Back to shopping bag</a
+              >
+              <i class="fa fa-thin fa-angle-right text-black me-2"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End nav -->
+      <!-- Main start -->
+      <main class="overflow-x-hidden m-5 py-3">
+        <section class="checkout-info d-flex align-items-center">
+          <div class="checkout-main w-75 w-mobile-100 mx-0 mx-md-2 p-0 p-md-5">
+            <form class="d-flex flex-column gap-4">
+                <div class="name row row-cols-2">
+                    <div class="first-name">
+                        <label for="firstName" class="form-label small required">First name</label>
+                        <input type="text" id="firstName" class="form-control" aria-describedby="passwordHelpBlock">
+                    </div>
+                    <div class="last-name">
+                        <label for="lastName" class="form-label small required">Last name</label>
+                        <input type="text" id="lastName" class="form-control" aria-describedby="passwordHelpBlock">
+                    </div>
+                </div>
+                <div class="address row row-cols-1">
+                    <div class="address-1">
+                        <label for="address-1" class="form-label small required">Address line 1</label>
+                        <textarea id="address-1" class="form-control"></textarea>
+                        <span class="small">Shipping unavailable for P.O boxes,APO/FPO address, hotels, freight forwarders, or address outside the georgia.</span>
+                        <br>
+                        <span
+                        class="menu__link"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample"
+                        aria-expanded="false"
+                        aria-controls="collapseWidthExample"
+                      >
+                        Enter address line 2
+                      </span>
+                  
+                      <div class="address-collapse d-none" style="min-height: 120px"> <!-- CHANGE DISPLAY TO BLOCK WHEN IT MOST APPEAR -->
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                          <div class="card card-body">
+                            <label for="address-2" class="form-label small">Address line 2</label>
+                            <textarea id="address-2" class="form-control"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="address-details row">
+                    <div class="col-6">
+                        <label for="city" class="form-label small required">CITY</label>
+                        <input id="city" class="form-control" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label for="state" class="form-label small required">STATE</label>
+                        <select id="state" class="form-select py-1 ps-1" aria-label="Default select example">
+                            <option selected="" value="0">36</option>
+                            <option value="1">37</option>
+                            <option value="2">38</option>
+                            <option value="3">39</option>
+                          </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="zipcode" class="form-label small required">ZIP-CODE</label>
+                        <input id="zipcode" class="form-control" type="number" maxlength="9999" minlength="1000">
+                    </div>
+                </div>
+                <div class="contact row">
+                    <div class="col-5">
+                        <label for="countryCode" class="form-label small required">CONTACT NUMBER</label>
+                        <select id="countryCode" class="form-select text-secondary py-1 ps-1" aria-label="Default select example">
+                            <option selected value="1">+Georgia</option>
+                            <option value="2">+IRAN</option>
+                            <option value="3">+FRANCE</option>
+                          </select>
+                    </div>
+                    <div class="col-7 mt-1">
+                        <label for="number" class="form-label small"></label>
+                        <input class="form-control mt-1" id="number" type="number">
+                    </div>
+                </div>
+                <div class="payment row">
+                  <div class="col-12 text-center border border-1 border-secondary border-opacity-25 rounded-2 p-5">
+                    <img src="/zardouz//assets//images/paypal.png" alt="">
+                    <br/>
+                    <button type="submit" class="w-75 bg-secondary px-4 py-2 bg-opacity-25 border-0 rounded-1 text-secondary text-opacity-75">PAYMENT</button>
+                  </div>
+                </div>
+            </form>
+          </div>
+          <div class="checkout-sidebar d-none d-md-block d-flex flex-column gap-5 mx-2 w-25">
+            <div class="sidebar-top border border-1 rounded-2 p-3">
+                <div class="sidebar-heading text-center mt-4">
+                    <h3>ORDERS SUMMARY</h3>
+                    <div
+                      class="shopping-item d-flex align-items-center justify-content-center gap-2"
+                    >
+                      <i class="fa fa-shopping-bag"></i>
+                      <span>1 ITEM</span>
+                    </div>
+                    <hr class="border border-secondary border-1 border-opacity-100" />
+                    <div class="order-summary-products position-relative">
+                      <div class="checkout-products d-flex flex-column gap-3">
+                          <div class="checkout-product d-flex align-items-center gap-3">
+                            <div class="product-image w-50 rounded-2">
+                              <img
+                                class="img-fluid w-100 rounded-2"
+                                src="/zardouz//assets//images/705d9a37-4fc1-4bdc-9f83-9240cdfde0dd.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="product-info text-start d-flex flex-column align-items-start gap-2">
+                              <h6>WOMEN'S FALL SUMMER 2024 COLLECTION</h6>
+                              <span class="text-secondary text-opacity-75"
+                                >Style #743834894</span
+                              >
+                              <span class="text-secondary text-opacity-75"
+                                >Variation: black and gold</span
+                              >
+                              <span class="text-secondary text-opacity-75"
+                              >
+                            </div>
+                          </div>
+                          <div class="checkout-product d-flex align-items-center gap-3">
+                            <div class="product-image w-50 rounded-2">
+                              <img
+                                class="img-fluid w-100 rounded-2"
+                                src="/zardouz//assets//images/6f5a17aa-1b3b-4125-b62a-71e9b282275c.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="product-info text-start d-flex flex-column align-items-start gap-2">
+                              <h6>WOMEN'S FALL SUMMER 2024 COLLECTION</h6>
+                              <span class="text-secondary text-opacity-75"
+                                >Style #743834894</span
+                              >
+                              <span class="text-secondary text-opacity-75"
+                                >Variation: black and gold</span
+                              >
+                              <span class="text-secondary text-opacity-75"
+                              >
+                            </div>
+                          </div>
+                          <div class="checkout-product d-flex align-items-center gap-3">
+                            <div class="product-image w-50 rounded-2">
+                              <img
+                                class="img-fluid w-100 rounded-2"
+                                src="/zardouz//assets//images/9be58101af8b4b1e8725f3968054ddea8954d8a4.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="product-info text-start d-flex flex-column align-items-start gap-2">
+                              <h6>WOMEN'S FALL SUMMER 2024 COLLECTION</h6>
+                              <span class="text-secondary text-opacity-75"
+                                >Style #743834894</span
+                              >
+                              <span class="text-secondary text-opacity-75"
+                                >Variation: black and gold</span
+                              >
+                              <span class="text-secondary text-opacity-75"
+                              >
+                            </div>
+                          </div>
+                          <div class="checkout-product d-flex align-items-center gap-3">
+                            <div class="product-image w-50 rounded-2">
+                              <img
+                                class="img-fluid w-100 rounded-2"
+                                src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="product-info text-start d-flex flex-column align-items-start gap-2">
+                              <h6>WOMEN'S FALL SUMMER 2024 COLLECTION</h6>
+                              <span class="text-secondary text-opacity-75"
+                                >Style #743834894</span
+                              >
+                              <span class="text-secondary text-opacity-75"
+                                >Variation: black and gold</span
+                              >
+                              <span class="text-secondary text-opacity-75"
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="overflow-filter"></div>
+                       
+                    </div>
+                    <hr class="border border-secondary border-1 border-opacity-100" />
+                    <div class="order-summary-price d-flex flex-column gap-2">
+                      <div class="d-flex justify-content-between">
+                          <span>Subtotal</span>
+                          <span>$50</span>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                          <span>Shipping</span>
+                          <span>Free</span>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                          <span>Estimated Tax</span>
+                          <span>%15</span>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                          <span>ESTIMATED TOTAL</span>
+                          <span>$60</span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="sidebar-bottom border border-1 rounded-2 p-1">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <span class="border-bottom border-1 border-black">
+                        PAYMENT OPTIONS
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">PayPal is only available payment method yet.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <span class="border-bottom border-1 border-black">
+                        SHIPPING OPTIONS
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span class="border-bottom border-1 border-black">
+                        MAY WE HELP?
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">If you have any issue or trouble in submit your order <a class="text-black text-decoration-none menu__link" href="/zardouz/contact-us.html">Contact us</a>!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+          class="responsive-summary d-flex d-md-none justify-content-center fixed-bottom bottom-5"
+        >
+          <button
+            class="btn btn-dark w-75 text-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom"
+            aria-controls="offcanvasBottom"
+          >
+            Cart details
+          </button>
+        </div>
+        </section>
+      </main>
+      <!-- Main end -->
+      <!-- Footer start -->
+      <footer
+        class="d-flex flex-column align-content-center justify-content-between align-items-center mx-0 mx-md-5 px-3 px-md-5 my-6 vh-50"
+      >
+        <div class="footer-form d-flex flex-column justify-content-between">
+          <h3 class="text-center mx-2 mx-md-5">
+            Receive exclusive promotions, private sales and news
+          </h3>
+
+          <form class="d-flex flex-column">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="form-text py-3 my-5 rounded-1"
+            />
+            <button class="rounded-1 bg-dark text-white py-3" type="submit">
+              Sign me up
+            </button>
+            <span class="my-5 text-center"
+              >By subscribing, you confirm that you have read the
+              <a href="#" class="text-decoration-underline text-black fw-bold">
+                Privacy Policy.
+              </a>
+            </span>
+          </form>
+        </div>
+        <div
+          class="footer-links d-flex gap-2 gap-md-4 justify-content-around flex-wrap w-50 w-mobile-100"
+        >
+          <a class="text-decoration-none text-black">Help</a>
+          <a class="text-decoration-none text-black" href="">My purchases</a>
+          <a class="text-decoration-none text-black" href="">Returns</a>
+          <a class="text-decoration-none text-black" href="">Returns</a>
+          <a class="text-decoration-none text-black" href="">Company</a>
+          <a class="text-decoration-none text-black" href=""
+            >Work with Zardouz</a
+          >
+          <a class="text-decoration-none text-black" href="">Site map</a>
+          <a class="text-decoration-none text-black" href="">sustainability</a>
+          <a class="text-decoration-none text-black" href="">store locator</a>
+          <a class="text-decoration-none text-black" href="">special days</a>
+          <a class="text-decoration-none text-black" href=""
+            >Renew your clothes</a
+          >
+        </div>
+        <div
+          class="footer-socials d-flex flex-wrap justify-content-center gap-4 gap-md-5 py-5 w-mobile-100"
+        >
+          <i class="fa fa-brands fa-square-instagram fs-2"></i>
+          <i class="fa fa-brands fa-facebook-f fs-2"></i>
+          <i class="fa fa-brands fa-linkedin-in fs-2"></i>
+          <i class="fa fa-brands fa-x-twitter fs-2"></i>
+          <i class="fa fa-brands fa-youtube fs-2"></i>
+          <i class="fa fa-brands fa-pinterest fs-2"></i>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+
+    <!-- Start cart details menu offcanvas -->
+    <div
+      class="offcanvas offcanvas-bottom h-50"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+    >
+      <div class="offcanvas-header">
+        <h5
+          class="offcanvas-title border-1 w-100 border-bottom border-secondary border-opacity-75 pb-1"
+          id="offcanvasBottomLabel"
+        >
+          Order summary
+        </h5>
+        <div class="offcanvas-header d-flex justify-content-end">
+          <i
+            class="fa-solid fa-circle-xmark fs-3 cursor-pointer"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></i>
+        </div>
+      </div>
+      <div class="offcanvas-body small">
+        <!-- BODY START -->
+
+        <div class="checkout-sidebar d-block d-md-none d-flex flex-column gap-5 w-100">
+          <div class="sidebar-top">
+              <div class="sidebar-heading text-center">
+                  <h3>ORDERS SUMMARY</h3>
+                  <div
+                    class="shopping-item d-flex align-items-center justify-content-center gap-2"
+                  >
+                    <i class="fa fa-shopping-bag"></i>
+                    <span>1 ITEM</span>
+                  </div>
+                  <hr class="border border-secondary border-1 border-opacity-100" />
+                  <div class="order-summary-products position-relative">
+                    <div class="checkout-products d-flex flex-column gap-3">
+                        <div class="checkout-product d-flex align-items-center gap-3">
+                          <div class="product-image w-50 rounded-2">
+                            <img
+                              class="img-fluid w-100 rounded-2"
+                              src="/zardouz//assets//images/705d9a37-4fc1-4bdc-9f83-9240cdfde0dd.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="product-info text-start d-flex flex-column align-items-start gap-2">
+                            <h6>WOMEN'S FALL SUMMER 2024 COLLECTION</h6>
+                            <span class="text-secondary text-opacity-75"
+                              >Style #743834894</span
+                            >
+                            <span class="text-secondary text-opacity-75"
+                              >Variation: black and gold</span
+                            >
+                            <span class="text-secondary text-opacity-75"
+                            >
+                          </div>
+                        </div>
+                        <div class="checkout-product d-flex align-items-center gap-3">
+                          <div class="product-image w-50 rounded-2">
+                            <img
+                              class="img-fluid w-100 rounded-2"
+                              src="/zardouz//assets//images/6f5a17aa-1b3b-4125-b62a-71e9b282275c.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="product-info text-start d-flex flex-column align-items-start gap-2">
+                            <h6>WOMEN'S FALL SUMMER 2024 COLLECTION</h6>
+                            <span class="text-secondary text-opacity-75"
+                              >Style #743834894</span
+                            >
+                            <span class="text-secondary text-opacity-75"
+                              >Variation: black and gold</span
+                            >
+                            <span class="text-secondary text-opacity-75"
+                            >
+                          </div>
+                        </div>
+                        <div class="checkout-product d-flex align-items-center gap-3">
+                          <div class="product-image w-50 rounded-2">
+                            <img
+                              class="img-fluid w-100 rounded-2"
+                              src="/zardouz//assets//images/9be58101af8b4b1e8725f3968054ddea8954d8a4.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="product-info text-start d-flex flex-column align-items-start gap-2">
+                            <h6>WOMEN'S FALL SUMMER 2024 COLLECTION</h6>
+                            <span class="text-secondary text-opacity-75"
+                              >Style #743834894</span
+                            >
+                            <span class="text-secondary text-opacity-75"
+                              >Variation: black and gold</span
+                            >
+                            <span class="text-secondary text-opacity-75"
+                            >
+                          </div>
+                        </div>
+                        <div class="checkout-product d-flex align-items-center gap-3">
+                          <div class="product-image w-50 rounded-2">
+                            <img
+                              class="img-fluid w-100 rounded-2"
+                              src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="product-info text-start d-flex flex-column align-items-start gap-2">
+                            <h6>WOMEN'S FALL SUMMER 2024 COLLECTION</h6>
+                            <span class="text-secondary text-opacity-75"
+                              >Style #743834894</span
+                            >
+                            <span class="text-secondary text-opacity-75"
+                              >Variation: black and gold</span
+                            >
+                            <span class="text-secondary text-opacity-75"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="overflow-filter"></div>
+                     
+                  </div>
+                  <hr class="border border-secondary border-1 border-opacity-100" />
+                  <div class="order-summary-price d-flex flex-column gap-2">
+                    <div class="d-flex justify-content-between">
+                        <span>Subtotal</span>
+                        <span>$50</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>Estimated Tax</span>
+                        <span>%15</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <span>ESTIMATED TOTAL</span>
+                        <span>$60</span>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+
+        <!-- BODY END -->
+      </div>
+    </div>
+    <!-- End cart details menu offcanvas -->
+    <script src="/zardouz/assets/js/custom.js"></script>
+    <script src="/zardouz/utilities/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
