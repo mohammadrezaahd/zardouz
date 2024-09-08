@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/zardouz/assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/zardouz/assets/images/logo.ico"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="/zardouz/utilities/bootstrap/css/bootstrap.min.css"
@@ -11,16 +15,20 @@
     <link rel="stylesheet" href="/zardouz/assets/style/custom.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <title>ZARDOUZ | Contact-us</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+    <title>ZAR-DOUZ | Archive</title>
   </head>
-  <body>
+  <body class="bg-white">
     <div class="main-container">
       <!-- Start nav -->
       <div class="nav-container fixed-top">
         <nav
-          class="nav-bar-2 bg-white d-none d-md-flex justify-content-between align-content-center align-items-center px-5 py-1"
+          class="nav-bar bg-white d-none d-md-flex justify-content-between align-content-center align-items-center px-5 py-1"
         >
           <div class="contact-btn">
             <div
@@ -45,7 +53,7 @@
           <div class="nav-items">
             <div class="d-flex align-content-center align-items-center">
               <i
-                class="toast-trigger fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
+                class="toast-trigger shoppingBag fa fa-bag-shopping cursor-pointer accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#cartCollapse"
@@ -246,11 +254,12 @@
           </div>
           <div class="d-flex flex-column align-items-center">
             <a
-            class="w-75 bg-black text-white text-center text-decoration-none rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
-            href="/zardouz/checkout.html"
-          >
-            CHECKOUT
-          </a>
+              class="w-75 bg-black text-white text-center text-decoration-none rounded-1 border border-1 border-black my-2 py-2 bg-black-btn"
+              href="/zardouz/checkout.html"
+            >
+              CHECKOUT
+            </a>
+
             <a
               class="w-75 bg-white text-black text-center text-decoration-none rounded-1 border border-1 border-black my-2 py-2 bg-white-btn"
               href="/zardouz/cart.html"
@@ -273,7 +282,7 @@
         </div>
         <div class="responsive-menu-items d-flex gap-3">
           <i
-            class="toast-trigger fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
+            class="toast-trigger shoppingBag fa fa-thin fa-bag-shopping text-black cursor-pointer accordion-button"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#cartCollapse"
@@ -307,273 +316,370 @@
       </div>
       <!-- End nav -->
       <!-- Main start -->
-      <main class="overflow-x-hidden m-5">
-        <section>
-          <div
-            class="d-flex flex-column justify-content-center align-items-center my-4 pt-3"
-          >
-            <h3 class="w-75 text-center border-bottom border-secondary fs-3">
-              Latest products
-            </h3>
-          </div>
-          <div class="top-products" style="height: 80vh">
-            <div
-              class="item-1 rounded-2 position-relative"
-              style="max-height: 80vh !important"
-            >
-              <img
-                class="w-100 h-100 object-fit-cover rounded-2"
-                src="/zardouz/assets/images/zardouz-accessories.png"
-                alt=""
-              />
-              <div
-                class="top-products-info position-absolute top-50 start-0 ms-5 mt-5"
-              >
-                <h4 class="text-white mb-4">Product name</h4>
-                <a
-                  class="w-100 bg-white text-black text-center text-decoration-none rounded-1 border border-1 border-black my-2 py-2 px-4 bg-white-btn"
-                  href="/zardouz/cart.html"
-                >
-                  VISIT PRODUCT PAGE
-                </a>
-              </div>
-            </div>
-            <div
-              class="item-2 rounded-2 position-relative"
-              style="max-height: 80vh !important"
-            >
-              <img
-                class="w-100 h-100 object-fit-cover rounded-2"
-                src="/zardouz/assets/images/contact-us.png"
-                alt=""
-              />
-              <div
-                class="top-products-info position-absolute top-50 start-0 ms-5 mt-5"
-              >
-                <h4 class="text-white mb-4">Product name</h4>
-                <a
-                  class="w-100 bg-white text-black text-center text-decoration-none rounded-1 border border-1 border-black my-2 py-2 px-4 bg-white-btn"
-                  href="/zardouz/cart.html"
-                >
-                  VISIT PRODUCT PAGE
-                </a>
-              </div>
-            </div>
-            <div
-              class="item-3 rounded-2 position-relative"
-              style="max-height: 80vh !important"
-            >
-              <img
-                class="w-100 h-100 object-fit-cover rounded-2"
-                src="/zardouz/assets/images/zardouz-accessories.png"
-                alt=""
-              />
-              <div
-                class="top-products-info position-absolute top-50 start-0 ms-5 mt-5"
-              >
-                <h4 class="text-white mb-4">Product name</h4>
-                <a
-                  class="w-100 bg-white text-black text-center text-decoration-none rounded-1 border border-1 border-black my-2 py-2 px-4 bg-white-btn"
-                  href="/zardouz/cart.html"
-                >
-                  VISIT PRODUCT PAGE
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
+      <main class="overflow-hidden mx-2 mx-md-1 mx-md-0">
         <section
-          class="product-container row row-cols-2 row-cols-md-5 overflow-hidden my-5 py-2 d-flex gap-"
+          class="products mx-md-2 my-md-5 py-md-5 row row-cols-2 row-cols-md-4 gap-0"
         >
-          <!-- This product has off -->
-          <div class="product-item position-relative rounded-2">
-            <div class="product-images">
-              <img
-                class="product-image img-fluid rounded-2 w-100"
-                src="/zardouz/assets/images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
-                alt=""
-              />
-              <div
-                class="product-gallery position-absolute bottom-0 start-0 d-flex gap-0"
-              >
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-1.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-2.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-3.png"
-                  alt=""
-                />
+          <div class="product-item p-0 h-100 position-relative overflow-hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slider h-100">
+                  <img
+                    class="img-fluid h-100 object-fit-cover object-center"
+                    src="/zardouz//assets//images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/men-collection.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/afc038cd-037b-4629-af9d-885b3bb24193.png"
+                    alt=""
+                  />
+                </div>
               </div>
-            </div>
-
-            <div class="product-info m-2">
-              <div class="d-flex justify-content-between align-items-center">
-                <h4 class="fs-5 p-0">Product name</h4>
-                <i class="fa fa-bookmark fs-6"></i>
-              </div>
-              <span
-                class="text-decoration-line-through text-secondary text-opacity-75"
-                >60$</span
-              >
-              <span class="fs-4">49$</span>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
             <div
-              class="product-off bg-black text-white position-absolute top-0 w-20 text-center rounded-1 ms-2 mt-2"
+              class="product-info position-absolute bg-white bottom-0 shadow z-3 p-4 text-center"
             >
-              off
+              <h5>WOMEN'S FALL SUMMER 2024 COLLECTION</h5>
+              <span>$ 2,750</span>
+              <br />
+              <span class="menu__link small toast-trigger addToBag"
+                >SHOP THIS</span
+              >
+            </div>
+            <div class="save-product position-absolute top-0 end-0 z-2">
+              <i class="fa fa-bookmark fa-regular cursor-pointer fs-5 m-3"></i>
             </div>
           </div>
-          <div class="product-item position-relative rounded-2">
-            <div class="product-images">
-              <img
-                class="product-image img-fluid rounded-2 w-100"
-                src="/zardouz/assets/images/705d9a37-4fc1-4bdc-9f83-9240cdfde0dd.png"
-                alt=""
-              />
-              <div
-                class="product-gallery position-absolute bottom-0 start-0 d-flex gap-0"
-              >
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-1.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-2.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-3.png"
-                  alt=""
-                />
+          <div class="product-item p-0 h-100 position-relative overflow-hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/men-collection.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/afc038cd-037b-4629-af9d-885b3bb24193.png"
+                    alt=""
+                  />
+                </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-
-            <div class="product-info m-2">
-              <div class="d-flex justify-content-between align-items-center">
-                <h4 class="fs-5 p-0">Product name</h4>
-                <i class="fa fa-bookmark fs-6"></i>
-              </div>
-              <span>60$</span>
+            <div
+              class="product-info position-absolute bg-white bottom-0 shadow z-3 p-4 text-center"
+            >
+              <h5>WOMEN'S FALL SUMMER 2024 COLLECTION</h5>
+              <span>$ 2,750</span>
+              <br />
+              <span class="menu__link small toast-trigger addToBag"
+                >SHOP THIS</span
+              >
+            </div>
+            <div class="save-product position-absolute top-0 end-0 z-2">
+              <i class="fa fa-bookmark fa-regular cursor-pointer fs-5 m-3"></i>
             </div>
           </div>
-          <div class="product-item position-relative rounded-2">
-            <div class="product-images">
-              <img
-                class="product-image img-fluid rounded-2"
-                src="/zardouz/assets/images/renew-home.png"
-                alt=""
-              />
-              <div
-                class="product-gallery position-absolute bottom-0 start-0 d-flex gap-0"
-              >
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-1.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-2.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-3.png"
-                  alt=""
-                />
+          <div class="product-item p-0 h-100 position-relative overflow-hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/men-collection.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/afc038cd-037b-4629-af9d-885b3bb24193.png"
+                    alt=""
+                  />
+                </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-
-            <div class="product-info m-2">
-              <div class="d-flex justify-content-between align-items-center">
-                <h4 class="fs-5 p-0">Product name</h4>
-                <i class="fa fa-bookmark fs-6"></i>
-              </div>
-              <span>60$</span>
+            <div
+              class="product-info position-absolute bg-white bottom-0 shadow z-3 p-4 text-center"
+            >
+              <h5>WOMEN'S FALL SUMMER 2024 COLLECTION</h5>
+              <span>$ 2,750</span>
+              <br />
+              <span class="menu__link small toast-trigger addToBag"
+                >SHOP THIS</span
+              >
+            </div>
+            <div class="save-product position-absolute top-0 end-0 z-2">
+              <i class="fa fa-bookmark fa-regular cursor-pointer fs-5 m-3"></i>
             </div>
           </div>
-          <div class="product-item position-relative rounded-2">
-            <div class="product-images">
-              <img
-                class="product-image img-fluid rounded-2 w-100"
-                src="/zardouz/assets/images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
-                alt=""
-              />
-              <div
-                class="product-gallery position-absolute bottom-0 start-0 d-flex gap-0"
-              >
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-1.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-2.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-3.png"
-                  alt=""
-                />
+          <div class="product-item p-0 h-100 position-relative overflow-hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/men-collection.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/afc038cd-037b-4629-af9d-885b3bb24193.png"
+                    alt=""
+                  />
+                </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-
-            <div class="product-info m-2">
-              <div class="d-flex justify-content-between align-items-center">
-                <h4 class="fs-5 p-0">Product name</h4>
-                <i class="fa fa-bookmark fs-6"></i>
-              </div>
-              <span>60$</span>
+            <div
+              class="product-info position-absolute bg-white bottom-0 shadow z-3 p-4 text-center"
+            >
+              <h5>WOMEN'S FALL SUMMER 2024 COLLECTION</h5>
+              <span>$ 2,750</span>
+              <br />
+              <span class="menu__link small toast-trigger addToBag"
+                >SHOP THIS</span
+              >
+            </div>
+            <div class="save-product position-absolute top-0 end-0 z-2">
+              <i class="fa fa-bookmark fa-solid cursor-pointer fs-5 m-3"></i>
             </div>
           </div>
-          <div class="product-item position-relative rounded-2">
-            <div class="product-images">
-              <img
-                class="product-image img-fluid rounded-2 w-100"
-                src="/zardouz/assets/images/6f5a17aa-1b3b-4125-b62a-71e9b282275c.png"
-                alt=""
-              />
-              <div
-                class="product-gallery position-absolute bottom-0 start-0 d-flex gap-0"
-              >
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-1.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-2.png"
-                  alt=""
-                />
-                <img
-                  class="col-4 px-0"
-                  src="/zardouz/assets/images/custom-3.png"
-                  alt=""
-                />
+          <div class="product-item p-0 h-100 position-relative overflow-hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slider h-100">
+                  <img
+                    class="img-fluid h-100 object-fit-cover object-center"
+                    src="/zardouz//assets//images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/men-collection.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/afc038cd-037b-4629-af9d-885b3bb24193.png"
+                    alt=""
+                  />
+                </div>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-
-            <div class="product-info m-2">
-              <div class="d-flex justify-content-between align-items-center">
-                <h4 class="fs-5 p-0">Product name</h4>
-                <i class="fa fa-bookmark fs-6"></i>
+            <div
+              class="product-info position-absolute bg-white bottom-0 shadow z-3 p-4 text-center"
+            >
+              <h5>WOMEN'S FALL SUMMER 2024 COLLECTION</h5>
+              <span>$ 2,750</span>
+              <br />
+              <span class="menu__link small toast-trigger addToBag"
+                >SHOP THIS</span
+              >
+            </div>
+            <div class="save-product position-absolute top-0 end-0 z-2">
+              <i class="fa fa-bookmark fa-solid cursor-pointer fs-5 m-3"></i>
+            </div>
+          </div>
+          <div class="product-item p-0 h-100 position-relative overflow-hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/men-collection.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/afc038cd-037b-4629-af9d-885b3bb24193.png"
+                    alt=""
+                  />
+                </div>
               </div>
-              <span>60$</span>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div
+              class="product-info position-absolute bg-white bottom-0 shadow z-3 p-4 text-center"
+            >
+              <h5>WOMEN'S FALL SUMMER 2024 COLLECTION</h5>
+              <span>$ 2,750</span>
+              <br />
+              <span class="menu__link small toast-trigger addToBag"
+                >SHOP THIS</span
+              >
+            </div>
+            <div class="save-product position-absolute top-0 end-0 z-2">
+              <i class="fa fa-bookmark fa-regular cursor-pointer fs-5 m-3"></i>
+            </div>
+          </div>
+          <div class="product-item p-0 h-100 position-relative overflow-hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/men-collection.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/afc038cd-037b-4629-af9d-885b3bb24193.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div
+              class="product-info position-absolute bg-white bottom-0 shadow z-3 p-4 text-center"
+            >
+              <h5>WOMEN'S FALL SUMMER 2024 COLLECTION</h5>
+              <span>$ 2,750</span>
+              <br />
+              <span class="menu__link small toast-trigger addToBag"
+                >SHOP THIS</span
+              >
+            </div>
+            <div class="save-product position-absolute top-0 end-0 z-2">
+              <i class="fa fa-bookmark fa-regular cursor-pointer fs-5 m-3"></i>
+            </div>
+          </div>
+          <div class="product-item p-0 h-100 position-relative overflow-hidden">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/0eea0cf2-8bb4-465f-a18b-425b554d5ec5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/ccd6565e39d31fcea57691d1ea7eb65c33ccc109.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/men-collection.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="/zardouz//assets//images/afc038cd-037b-4629-af9d-885b3bb24193.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div
+              class="product-info position-absolute bg-white bottom-0 shadow z-3 p-4 text-center"
+            >
+              <h5>WOMEN'S FALL SUMMER 2024 COLLECTION</h5>
+              <span>$ 2,750</span>
+              <br />
+              <span class="menu__link small toast-trigger addToBag"
+                >SHOP THIS</span
+              >
+            </div>
+            <div class="save-product position-absolute top-0 end-0 z-2">
+              <i class="fa fa-bookmark fa-regular cursor-pointer fs-5 m-3"></i>
             </div>
           </div>
         </section>
@@ -639,7 +745,6 @@
       </footer>
       <!-- Footer end -->
     </div>
-
     <!-- Main menu Offcanvas start -->
     <div
       class="offcanvas offcanvas-end px-4 w-mobile-100"
@@ -933,21 +1038,46 @@
       </div>
     </div>
     <!-- Responsive menu offcanvas end -->
-
-    <!-- Start toast -->
+    <!-- Start bag toast -->
     <div
-      class="bagToast toast-hidden rounded-2 w-25 w-mobile-100 sticky-bottom bottom-5 align-items-center text-bg-dark border-0 py-4 m-0 ms-md-2"
+      class="bagToast toast-hidden rounded-2 w-25 w-mobile-75 sticky-bottom bottom-5 align-items-center text-bg-dark border-0 pb-4 pt-4 mx-auto mx-md-0"
     >
       <div class="d-flex align-items-center justify-content-around">
         <div class="toast-body">Your shopping bag is empty</div>
-        <a class="bag-toast-btn zardouz-underline text-white cursor-pointer">
+        <a class="toast-close-btn zardouz-underline text-white cursor-pointer">
           Close
         </a>
       </div>
+      <div
+        class="progress-bar position-absolute rounded-bottom-2 bottom-0"
+      ></div>
     </div>
-    <!-- End toast -->
+    <!-- End bag toast -->
+    <!-- Start Add to bag toast -->
+    <div
+      class="addToCartToast toast-hidden rounded-2 w-25 w-mobile-75 sticky-bottom bottom-5 align-items-center text-bg-success border-0 pb-2 pt-4 mx-auto mx-md-0"
+    >
+      <div class="d-flex align-items-center justify-content-around">
+        <div class="toast-body">Product added to your shopping bag</div>
+        <a class="toast-close-btn text-white cursor-pointer"> Close </a>
+      </div>
+      <div
+        class="progress bg-transparent position-relative"
+        role="progressbar"
+        aria-label="danger example"
+        aria-valuenow="100"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+      <div
+        class="progress-bar position-absolute rounded-bottom-2 bottom-0"
+      ></div>
+    </div>
+    <!-- End Add to bag toast -->
 
     <script src="/zardouz/assets/js/custom.js"></script>
     <script src="/zardouz/utilities/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/zardouz/assets/js/Swiper/archiveSwiper.js"></script>
   </body>
 </html>

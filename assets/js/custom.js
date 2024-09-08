@@ -1,11 +1,10 @@
 //Handle styles by bootstrap events
-
 const mainContainer = document.querySelector(".main-container");
-const bagToastBtn = document.querySelector(".bag-toast-btn");
 const bagToastElement = document.querySelector(".bagToast");
 const cartCount = document.querySelector(".cart-count");
 const addressCollapse = document.querySelector(".address-collapse");
 const singleProductSlider = document.querySelector(".single-product-slider");
+const addToCartToastElement = document.querySelector(".addToCartToast");
 const offcanvasRightElements = makeObjectsIterable(
   document.getElementsByClassName("offcanvas")
 );
@@ -18,8 +17,11 @@ const accordionCollapseTriggers = makeObjectsIterable(
 const accordionCollapseItems = makeObjectsIterable(
   document.querySelectorAll(".auto-collapse ")
 );
-const shoppingBagElements = makeObjectsIterable(
+const toastTrigger = makeObjectsIterable(
   document.querySelectorAll(".toast-trigger")
+);
+const toastCloser = makeObjectsIterable(
+  document.querySelectorAll(".toast-close-btn")
 );
 const colorChangeHandlerElements = makeObjectsIterable(
   document.querySelectorAll(".color-change-class")
@@ -77,83 +79,53 @@ offcanvasRightElements.forEach((item) => {
   });
 });
 
-//Show and hide notification
-shoppingBagElements?.forEach((item) => {
+//Show notification
+toastTrigger?.forEach((item) => {
   item.addEventListener("click", () => {
-    //if only cart was empty
-    if (bagToastElement.classList.contains("toast-hidden")) {
-      bagToastElement.classList.remove("toast-hidden");
+    //Shopping bag is empty notification
+    if (item.classList.contains("shoppingBag")) {
+      if (bagToastElement.classList.contains("toast-hidden")) {
+        bagToastElement.classList.remove("toast-hidden");
+        bagToastElement.lastElementChild.classList.add(
+          "animation-progress"
+        );
+        setTimeout(() => {
+          bagToastElement.classList.add("toast-hidden");
+          bagToastElement.lastElementChild.classList.remove(
+            "animation-progress"
+          );
+        }, 3000);
+      }
+    }
+    //Add to cart notification
+    if (item.classList.contains("addToBag")) {
+      if (addToCartToastElement.classList.contains("toast-hidden")) {
+        addToCartToastElement.classList.remove("toast-hidden");
+        addToCartToastElement.lastElementChild.classList.add(
+          "animation-progress"
+        );
+        setTimeout(() => {
+          addToCartToastElement.classList.add("toast-hidden");
+          addToCartToastElement.lastElementChild.classList.remove(
+            "animation-progress"
+          );
+        }, 3000);
+      }
     }
   });
 });
-
-bagToastBtn?.addEventListener("click", () => {
-  bagToastElement.classList.add("toast-hidden");
+//Hide notification
+toastCloser?.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.parentElement.parentElement.classList.add("toast-hidden");
+  });
 });
-
 //Handle address line 2 collapse
 addressCollapse?.addEventListener("show.bs.collapse", () => {
   addressCollapse.classList.remove("d-none");
 });
 addressCollapse?.addEventListener("hidden.bs.collapse", () => {
   addressCollapse.classList.add("d-none");
-});
-
-//single product swiper
-document.addEventListener("DOMContentLoaded", () => {
-  var swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
-    slidesPerView: 1,
-    spaceBetween: 30,
-    mousewheel: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    on: {
-      reachEnd: () => {
-        let startY;
-        let endY;
-        const touchStartHandler = (e) => {
-          startY = e.changedTouches[0].clientY;
-          singleProductSlider.addEventListener("touchend", touchEndHandler);
-        };
-        const touchEndHandler = (e) => {
-          endY = e.changedTouches[0].clientY;
-          if (startY > endY) {
-            window.scrollTo({
-              top: window.scrollY + window.innerHeight,
-              behavior: "smooth",
-            });
-          } else {
-            singleProductSlider.removeEventListener(
-              "touchstart",
-              touchStartHandler
-            );
-            singleProductSlider.removeEventListener(
-              "touchend",
-              touchEndHandler
-            );
-          }
-        };
-
-        const wheelHandler = (e) => {
-          if (e.deltaY > 0) {
-            window.scrollTo({
-              top: window.scrollY + window.innerHeight,
-              behavior: "smooth",
-            });
-          } else {
-            singleProductSlider.removeEventListener("wheel", wheelHandler);
-          }
-        };
-        setTimeout(() => {
-          singleProductSlider.addEventListener("wheel", wheelHandler);
-          singleProductSlider.addEventListener("touchstart", touchStartHandler);
-        }, 300);
-      },
-    },
-  });
 });
 
 //product count controller
