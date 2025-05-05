@@ -358,7 +358,7 @@ footer input#email {
   width: 100%;
   height: 100%;
 }
-/* ASD */
+
 .products-save .swiper-slide {
   height: 300px; /* موبایل */
   border: solid #d0d0d0;
@@ -581,7 +581,8 @@ footer input#email {
 .address-details select:focus,
 .checkout-main form > .contact select:focus,
 .filter-search-panel .form-control:focus,
-.filter-search-panel .form-select:focus {
+.filter-search-panel .form-select:focus,
+.auth .form-control:focus {
   box-shadow: none !important;
   border: 1px solid gainsboro;
 }
@@ -881,6 +882,53 @@ footer input#email {
   box-shadow: unset !important;
   border-color: unset !important;
 }
+
+/* AUITH */
+
+.auth {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.auth .card {
+  max-width: 800px;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.auth .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.auth .form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 2rem;
+}
+
+.auth .nav-tabs .nav-link {
+  border: none;
+  background: transparent;
+  position: relative;
+}
+
+.auth .nav-tabs .nav-link.active {
+  font-weight: 600;
+}
+
+.auth #tab-underline {
+  left: 0;
+  width: 0;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
@@ -971,6 +1019,12 @@ footer input#email {
   }
   .vh-tablet-50 {
     height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .auth .carousel {
+    display: none;
   }
 }
 /* Animation */
