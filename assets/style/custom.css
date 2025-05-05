@@ -582,7 +582,9 @@ footer input#email {
 .checkout-main form > .contact select:focus,
 .filter-search-panel .form-control:focus,
 .filter-search-panel .form-select:focus,
-.auth .form-control:focus {
+.auth .form-control:focus,
+.contact .form-control:focus,
+.profile .form-control:focus {
   box-shadow: none !important;
   border: 1px solid gainsboro;
 }
