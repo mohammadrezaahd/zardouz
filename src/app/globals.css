@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Far Zar";
+  src: url("/assets/fonts/Far.Zar.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #131313;
+  background: #fff;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.site-blur {
+  filter: blur(5px);
+  transition: filter 200ms ease;
+}
+
+.hover-image {
+  transition: filter 300ms ease, transform 300ms ease;
+}
+
+.hover-image:hover {
+  filter: contrast(0.65);
+  transform: scale(1.01);
+}
+
+.animated-underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.animated-underline::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  left: 0;
+  height: 1px;
+  background: currentColor;
+  transform-origin: right;
+  transition: transform 250ms ease;
+}
+
+.animated-underline:hover::after {
+  transform: scaleX(0);
+}
+
+.page-hero {
+  min-height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    min-height: 55vh;
+  }
+}
